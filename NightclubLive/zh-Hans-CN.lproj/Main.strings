@@ -1,0 +1,87 @@
+
+/* Class = "UILabel"; text = "竞选－投票"; ObjectID = "0Gc-8o-mly"; */
+"0Gc-8o-mly.text" = "竞选－投票";
+
+/* Class = "UILabel"; text = "我的钱包"; ObjectID = "3b7-Ug-LHn"; */
+"3b7-Ug-LHn.text" = "我的钱包";
+
+/* Class = "UILabel"; text = "活动订台"; ObjectID = "4ke-ky-qYa"; */
+"4ke-ky-qYa.text" = "活动订台";
+
+/* Class = "UINavigationItem"; title = "消息"; ObjectID = "4mf-6e-Xbz"; */
+"4mf-6e-Xbz.title" = "消息";
+
+/* Class = "UILabel"; text = "订单列表"; ObjectID = "7b3-Hd-SXF"; */
+"7b3-Hd-SXF.text" = "订单列表";
+
+/* Class = "UINavigationItem"; title = "夜店圈"; ObjectID = "BLS-Vc-ar5"; */
+"BLS-Vc-ar5.title" = "夜店圈";
+
+/* Class = "UILabel"; text = "贡献榜"; ObjectID = "BQa-TR-oxn"; */
+"BQa-TR-oxn.text" = "贡献榜";
+
+/* Class = "UIButton"; normalTitle = "查看全部"; ObjectID = "CEY-GR-fK3"; */
+"CEY-GR-fK3.normalTitle" = "查看全部";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "CTw-4N-s96"; */
+"CTw-4N-s96.text" = "1";
+
+/* Class = "UITabBarItem"; title = "红人圈"; ObjectID = "Csr-EX-cdd"; */
+"Csr-EX-cdd.title" = "红人圈";
+
+/* Class = "UIButton"; normalTitle = " 广州"; ObjectID = "FMQ-Mi-Wxe"; */
+"FMQ-Mi-Wxe.normalTitle" = " 广州";
+
+/* Class = "UILabel"; text = "我的关注"; ObjectID = "IsW-0X-bGC"; */
+"IsW-0X-bGC.text" = "我的关注";
+
+/* Class = "UILabel"; text = "一元许愿"; ObjectID = "Jom-1c-bfa"; */
+"Jom-1c-bfa.text" = "一元许愿";
+
+/* Class = "UIButton"; normalTitle = "查看全部"; ObjectID = "O7J-8j-GRh"; */
+"O7J-8j-GRh.normalTitle" = "查看全部";
+
+/* Class = "UITabBarItem"; title = "消息"; ObjectID = "Oon-5Z-4yw"; */
+"Oon-5Z-4yw.title" = "消息";
+
+/* Class = "UILabel"; text = "认证享福利"; ObjectID = "TBJ-UV-9Qn"; */
+"TBJ-UV-9Qn.text" = "认证享福利";
+
+/* Class = "UITabBarItem"; title = "夜店圈"; ObjectID = "Y89-pP-rzJ"; */
+"Y89-pP-rzJ.title" = "夜店圈";
+
+/* Class = "UILabel"; text = "974"; ObjectID = "axu-FG-IPW"; */
+"axu-FG-IPW.text" = "974";
+
+/* Class = "UILabel"; text = "169"; ObjectID = "fDW-LJ-k9b"; */
+"fDW-LJ-k9b.text" = "169";
+
+/* Class = "UITabBarItem"; title = "Live"; ObjectID = "fh1-NZ-UzX"; */
+"fh1-NZ-UzX.title" = "Live";
+
+/* Class = "UITableViewController"; title = "MineViewController"; ObjectID = "g4k-xb-FU7"; */
+"g4k-xb-FU7.title" = "MineViewController";
+
+/* Class = "UITabBarItem"; title = "我的"; ObjectID = "hjB-rV-bdC"; */
+"hjB-rV-bdC.title" = "我的";
+
+/* Class = "UILabel"; text = "我的粉丝"; ObjectID = "k6Z-rj-AH5"; */
+"k6Z-rj-AH5.text" = "我的粉丝";
+
+/* Class = "UILabel"; text = "邀约－找人"; ObjectID = "oei-fO-5h9"; */
+"oei-fO-5h9.text" = "邀约－找人";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "opZ-Yu-AWM"; */
+"opZ-Yu-AWM.text" = "--";
+
+/* Class = "UILabel"; text = "我要认证"; ObjectID = "rmQ-15-FeR"; */
+"rmQ-15-FeR.text" = "我要认证";
+
+/* Class = "UILabel"; text = "我的礼物"; ObjectID = "sS4-GF-BPh"; */
+"sS4-GF-BPh.text" = "我的礼物";
+
+/* Class = "UILabel"; text = "一元夺豪礼"; ObjectID = "tV5-ZU-zuX"; */
+"tV5-ZU-zuX.text" = "一元夺豪礼";
+
+/* Class = "UILabel"; text = "未领取"; ObjectID = "vvM-TA-0KO"; */
+"vvM-TA-0KO.text" = "未领取";

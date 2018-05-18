@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BlacklistViewController-->
+        <scene sceneID="JDI-ri-o6s">
+            <objects>
+                <viewController storyboardIdentifier="BlacklistViewController" title="BlacklistViewController" id="ZdI-ui-8zL" customClass="BlacklistViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2F5-3B-zCM"/>
+                        <viewControllerLayoutGuide type="bottom" id="S21-Yh-v4s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ExH-bf-c58">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uVn-4S-vLK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="50" id="z3R-FS-fxR" customClass="BlacklistCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z3R-FS-fxR" id="aWn-pC-cIJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon1" translatesAutoresizingMaskIntoConstraints="NO" id="IlS-qt-kXX">
+                                                    <rect key="frame" x="15" y="7.5" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="9Ku-Yn-qPb"/>
+                                                        <constraint firstAttribute="width" secondItem="IlS-qt-kXX" secondAttribute="height" multiplier="1:1" id="E9V-Cm-dJ0"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Danny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuD-bb-2IH">
+                                                    <rect key="frame" x="58" y="0.0" width="49" height="49.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUg-lJ-TyG">
+                                                    <rect key="frame" x="250" y="0.0" width="110" height="49.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="110" id="hmH-9E-rxF"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <state key="normal" title="  广州市" image="btn_定位_gray">
+                                                        <color key="titleColor" red="0.49803921569999998" green="0.50196078430000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="wUg-lJ-TyG" secondAttribute="trailing" constant="7" id="1Xb-x5-S1A"/>
+                                                <constraint firstItem="YuD-bb-2IH" firstAttribute="top" secondItem="aWn-pC-cIJ" secondAttribute="topMargin" constant="-8" id="63h-tR-Ujc"/>
+                                                <constraint firstItem="wUg-lJ-TyG" firstAttribute="centerY" secondItem="aWn-pC-cIJ" secondAttribute="centerY" id="A2S-QJ-gwn"/>
+                                                <constraint firstItem="YuD-bb-2IH" firstAttribute="centerY" secondItem="aWn-pC-cIJ" secondAttribute="centerY" id="NFH-8d-Vgk"/>
+                                                <constraint firstItem="YuD-bb-2IH" firstAttribute="leading" secondItem="IlS-qt-kXX" secondAttribute="trailing" constant="8" id="NS8-Qp-J2p"/>
+                                                <constraint firstItem="IlS-qt-kXX" firstAttribute="leading" secondItem="aWn-pC-cIJ" secondAttribute="leadingMargin" constant="7" id="Osf-Tl-lk7"/>
+                                                <constraint firstItem="IlS-qt-kXX" firstAttribute="centerY" secondItem="aWn-pC-cIJ" secondAttribute="centerY" id="foE-Td-8PM"/>
+                                                <constraint firstItem="wUg-lJ-TyG" firstAttribute="top" secondItem="aWn-pC-cIJ" secondAttribute="topMargin" constant="-8" id="p2S-Uj-uG1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="headerImg" destination="IlS-qt-kXX" id="Yzm-fq-Ijk"/>
+                                            <outlet property="locationBtn" destination="wUg-lJ-TyG" id="0xg-6l-MX9"/>
+                                            <outlet property="nameLab" destination="YuD-bb-2IH" id="6Bw-lN-gjV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZdI-ui-8zL" id="wTQ-ag-I8O"/>
+                                    <outlet property="delegate" destination="ZdI-ui-8zL" id="YVD-06-kw0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uVn-4S-vLK" firstAttribute="centerX" secondItem="ExH-bf-c58" secondAttribute="centerX" id="3o6-MZ-JA4"/>
+                            <constraint firstItem="uVn-4S-vLK" firstAttribute="leading" secondItem="ExH-bf-c58" secondAttribute="leadingMargin" constant="-16" id="htV-AC-DRH"/>
+                            <constraint firstItem="uVn-4S-vLK" firstAttribute="top" secondItem="ExH-bf-c58" secondAttribute="top" id="pRT-O0-7R8"/>
+                            <constraint firstItem="S21-Yh-v4s" firstAttribute="top" secondItem="uVn-4S-vLK" secondAttribute="bottom" id="rLN-g6-JB5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="黑名单" id="Nei-n2-C2y"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="uVn-4S-vLK" id="4hn-e2-PT0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b7n-HZ-KKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2690.4000000000001" y="-515.8920539730135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_定位_gray" width="7" height="10"/>
+        <image name="icon1" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AddressBookViewController-->
+        <scene sceneID="0ct-31-AjI">
+            <objects>
+                <viewController storyboardIdentifier="AddressBookViewController" title="AddressBookViewController" id="FCC-Xc-12o" customClass="AddressBookViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5H4-9V-Jrk"/>
+                        <viewControllerLayoutGuide type="bottom" id="gLx-kd-g6n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="25g-Kd-jZw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQR-rz-ORE" userLabel="searchView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xDd-fF-e0i">
+                                        <rect key="frame" x="15" y="39.5" width="294" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.57248467209999998" green="0.57258617879999996" blue="0.57247823480000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBd-9p-dz4">
+                                        <rect key="frame" x="324" y="8" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="取消">
+                                            <color key="titleColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_searchingthree" translatesAutoresizingMaskIntoConstraints="NO" id="KOj-TS-adr">
+                                        <rect key="frame" x="15" y="17" width="16.5" height="16.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="搜索联系人" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N2j-4k-7qy">
+                                        <rect key="frame" x="40.5" y="8.5" width="268.5" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="iNO-EK-zjg"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sOR-64-N8Y">
+                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="FCC-Xc-12o" id="cQj-0J-6ui"/>
+                                    <outlet property="delegate" destination="FCC-Xc-12o" id="NFe-so-7GL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gLx-kd-g6n" firstAttribute="top" secondItem="sOR-64-N8Y" secondAttribute="bottom" id="0cQ-HX-IRo"/>
+                            <constraint firstItem="JQR-rz-ORE" firstAttribute="top" secondItem="5H4-9V-Jrk" secondAttribute="bottom" id="1Dl-np-XsV"/>
+                            <constraint firstAttribute="trailing" secondItem="sOR-64-N8Y" secondAttribute="trailing" id="4fy-Mk-cJq"/>
+                            <constraint firstItem="sOR-64-N8Y" firstAttribute="top" secondItem="JQR-rz-ORE" secondAttribute="bottom" id="GxW-K2-sfK"/>
+                            <constraint firstAttribute="trailing" secondItem="JQR-rz-ORE" secondAttribute="trailing" id="JvB-iH-GUg"/>
+                            <constraint firstItem="JQR-rz-ORE" firstAttribute="leading" secondItem="25g-Kd-jZw" secondAttribute="leading" id="LLP-vU-Nlo"/>
+                            <constraint firstItem="sOR-64-N8Y" firstAttribute="leading" secondItem="25g-Kd-jZw" secondAttribute="leading" id="QbU-qp-q1Y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="通讯录" id="dLQ-s6-MDe"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="y8S-M5-zAA" id="rT0-e8-vsz"/>
+                        <outlet property="searchTextfield" destination="N2j-4k-7qy" id="wbH-yv-xqv"/>
+                        <outlet property="tableView" destination="sOR-64-N8Y" id="hZn-iA-RoZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bes-1i-Dt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="y8S-M5-zAA">
+                    <connections>
+                        <outlet property="delegate" destination="FCC-Xc-12o" id="UCZ-h1-zV2"/>
+                        <outlet property="searchContentsController" destination="FCC-Xc-12o" id="xan-yI-7qu"/>
+                        <outlet property="searchResultsDataSource" destination="FCC-Xc-12o" id="a6w-19-oL3"/>
+                        <outlet property="searchResultsDelegate" destination="FCC-Xc-12o" id="DRb-f1-Cya"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-3375.1999999999998" y="-515.8920539730135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_searchingthree" width="16" height="16"/>
+    </resources>
+</document>

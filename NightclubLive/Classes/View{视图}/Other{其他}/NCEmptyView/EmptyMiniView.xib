@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EmptyMiniView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_blackrabbit" translatesAutoresizingMaskIntoConstraints="NO" id="kR6-7B-4fh">
+                    <rect key="frame" x="118" y="7" width="32.5" height="32.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32.5" id="6eb-xn-avd"/>
+                        <constraint firstAttribute="height" constant="32.5" id="YSI-lZ-liB"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示文本" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="st6-Pu-pFf">
+                    <rect key="frame" x="161" y="15" width="53.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="st6-Pu-pFf" firstAttribute="leading" secondItem="kR6-7B-4fh" secondAttribute="trailing" constant="10.5" id="1y0-wC-1U2"/>
+                <constraint firstItem="kR6-7B-4fh" firstAttribute="centerY" secondItem="st6-Pu-pFf" secondAttribute="centerY" id="AoX-py-Tjm"/>
+                <constraint firstItem="st6-Pu-pFf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="B4M-hL-U3D"/>
+                <constraint firstItem="st6-Pu-pFf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="h7V-Bn-BDQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tipLabel" destination="st6-Pu-pFf" id="Jsa-dG-WZ1"/>
+            </connections>
+            <point key="canvasLocation" x="8.5" y="-418"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_blackrabbit" width="32" height="34"/>
+    </resources>
+</document>

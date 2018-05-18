@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--夜生活-->
+        <scene sceneID="5J2-EA-O6P">
+            <objects>
+                <viewController storyboardIdentifier="PaiPaiVC" title="夜生活" id="O3k-kb-7Lx" customClass="PaiPaiVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7sg-mj-cJn"/>
+                        <viewControllerLayoutGuide type="bottom" id="NSy-zq-A9Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jre-vj-9P1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZNG-S5-KiV">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9ee-2f-Oa8">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="O3k-kb-7Lx" id="O4d-eb-cdq"/>
+                                    <outlet property="delegate" destination="O3k-kb-7Lx" id="2Rb-Wd-e26"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZNG-S5-KiV" firstAttribute="top" secondItem="7sg-mj-cJn" secondAttribute="bottom" id="HE1-yP-miQ"/>
+                            <constraint firstItem="NSy-zq-A9Q" firstAttribute="top" secondItem="ZNG-S5-KiV" secondAttribute="bottom" id="Kog-WZ-cF2"/>
+                            <constraint firstAttribute="trailing" secondItem="ZNG-S5-KiV" secondAttribute="trailing" id="M21-Qm-Qvc"/>
+                            <constraint firstItem="ZNG-S5-KiV" firstAttribute="leading" secondItem="Jre-vj-9P1" secondAttribute="leading" id="TfB-dg-wi8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="夜生活" id="7qD-pd-n94"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="collectionView" destination="ZNG-S5-KiV" id="Lcu-vX-7IA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Obo-9O-Aul" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2716" y="-1356"/>
+        </scene>
+    </scenes>
+</document>

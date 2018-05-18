@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="2T8-uv-jjb">
+            <objects>
+                <navigationController id="PP5-Rn-rUz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lAh-PV-Lv3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3D0-RK-AjP" kind="relationship" relationship="rootViewController" id="pR5-eo-K49"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PCi-NF-153" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1201" y="215"/>
+        </scene>
+        <!--动态详情-->
+        <scene sceneID="DZv-U4-qYS">
+            <objects>
+                <viewController storyboardIdentifier="ClubCircleDynamicDetailSuperVC" title="酷炫dj" id="3D0-RK-AjP" userLabel="动态详情" customClass="ClubCircleDynamicDetailSuperVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="caC-UH-J7C"/>
+                        <viewControllerLayoutGuide type="bottom" id="kjx-DQ-PLA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Oa-Vb-mSU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MeF-fl-KwF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJO-kH-YAH">
+                                        <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3e-eh-x1U">
+                                                <rect key="frame" x="15" y="7" width="260" height="31"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入评论内容" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r9p-UI-pnG">
+                                                        <rect key="frame" x="16" y="3" width="228" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="jyA-fr-DNW"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31" id="BKv-NO-pIc"/>
+                                                    <constraint firstItem="r9p-UI-pnG" firstAttribute="leading" secondItem="l3e-eh-x1U" secondAttribute="leading" constant="16" id="R53-YA-QdF"/>
+                                                    <constraint firstAttribute="trailing" secondItem="r9p-UI-pnG" secondAttribute="trailing" constant="16" id="lCV-yA-cDH"/>
+                                                    <constraint firstAttribute="width" constant="260" id="vDA-sL-Dud"/>
+                                                    <constraint firstItem="r9p-UI-pnG" firstAttribute="centerY" secondItem="l3e-eh-x1U" secondAttribute="centerY" id="y7Q-dR-8bF"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAO-ph-Eac">
+                                                <rect key="frame" x="275" y="0.0" width="100" height="45"/>
+                                                <state key="normal" title="发送"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="TAO-ph-Eac" firstAttribute="top" secondItem="CJO-kH-YAH" secondAttribute="top" id="21e-AZ-hYG"/>
+                                            <constraint firstItem="l3e-eh-x1U" firstAttribute="centerY" secondItem="CJO-kH-YAH" secondAttribute="centerY" id="9Q6-gF-el1"/>
+                                            <constraint firstAttribute="height" constant="45" id="9bC-Yb-oxf"/>
+                                            <constraint firstItem="TAO-ph-Eac" firstAttribute="leading" secondItem="l3e-eh-x1U" secondAttribute="trailing" id="AAw-x4-V4C"/>
+                                            <constraint firstAttribute="bottom" secondItem="TAO-ph-Eac" secondAttribute="bottom" id="Ntq-87-kIF"/>
+                                            <constraint firstAttribute="trailing" secondItem="TAO-ph-Eac" secondAttribute="trailing" id="PIm-jU-puQ"/>
+                                            <constraint firstItem="l3e-eh-x1U" firstAttribute="leading" secondItem="CJO-kH-YAH" secondAttribute="leading" constant="15" id="e3Q-Ky-Zyc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.43921568630000002" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="CJO-kH-YAH" firstAttribute="leading" secondItem="MeF-fl-KwF" secondAttribute="leading" id="LAY-Co-So6"/>
+                                    <constraint firstAttribute="trailing" secondItem="CJO-kH-YAH" secondAttribute="trailing" id="jTa-1G-Bco"/>
+                                    <constraint firstAttribute="bottom" secondItem="CJO-kH-YAH" secondAttribute="bottom" id="n5u-Vd-gYB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MeF-fl-KwF" firstAttribute="height" secondItem="1Oa-Vb-mSU" secondAttribute="height" id="V9j-KP-64f"/>
+                            <constraint firstItem="MeF-fl-KwF" firstAttribute="leading" secondItem="1Oa-Vb-mSU" secondAttribute="leading" id="ntJ-Gx-Nde"/>
+                            <constraint firstItem="MeF-fl-KwF" firstAttribute="top" secondItem="1Oa-Vb-mSU" secondAttribute="top" id="wBo-GW-svO"/>
+                            <constraint firstItem="MeF-fl-KwF" firstAttribute="width" secondItem="1Oa-Vb-mSU" secondAttribute="width" id="xRh-BF-OrK"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="动态详情" id="9tC-C4-bUz">
+                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="nf0-1i-miB">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="apX-UC-pGh">
+                                <rect key="frame" x="338" y="11" width="21" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="心声-右上角按钮"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bottomView" destination="CJO-kH-YAH" id="n0v-xQ-QaU"/>
+                        <outlet property="commentBtn" destination="TAO-ph-Eac" id="vsK-iX-vey"/>
+                        <outlet property="contentView" destination="MeF-fl-KwF" id="3vG-pL-rCC"/>
+                        <outlet property="moreBtn" destination="apX-UC-pGh" id="fdZ-u2-yab"/>
+                        <outlet property="tf" destination="r9p-UI-pnG" id="we0-wH-APB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SuN-QH-cBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1831" y="215"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="心声-右上角按钮" width="21" height="4"/>
+    </resources>
+</document>

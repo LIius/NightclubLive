@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RDPDataPickView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uAN-ze-s28">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVy-sW-WAx">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="kVy-sW-WAx" secondAttribute="height" id="TL0-Zr-Lyp"/>
+                            </constraints>
+                            <state key="normal" title="确认">
+                                <color key="titleColor" red="0.80392156859999997" green="0.30980392159999998" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="okClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="iMc-JU-rMc"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择器" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xek-vj-AkR">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="BaB-ss-fE0"/>
+                        <constraint firstAttribute="trailing" secondItem="kVy-sW-WAx" secondAttribute="trailing" constant="16" id="KVG-li-ddG"/>
+                        <constraint firstItem="xek-vj-AkR" firstAttribute="centerX" secondItem="uAN-ze-s28" secondAttribute="centerX" id="PJG-Xm-FbQ"/>
+                        <constraint firstItem="kVy-sW-WAx" firstAttribute="top" secondItem="uAN-ze-s28" secondAttribute="top" id="Pob-Yw-h2z"/>
+                        <constraint firstAttribute="bottom" secondItem="kVy-sW-WAx" secondAttribute="bottom" id="x0l-Gd-t4x"/>
+                        <constraint firstItem="xek-vj-AkR" firstAttribute="centerY" secondItem="uAN-ze-s28" secondAttribute="centerY" id="zQb-Yg-aZw"/>
+                    </constraints>
+                </view>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FL5-n8-sN5">
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="I3K-EJ-Rma"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="yTa-de-bGU"/>
+                    </connections>
+                </pickerView>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="WMx-pS-JsD">
+                    <date key="date" timeIntervalSinceReferenceDate="512386308.142941">
+                        <!--2017-03-28 09:31:48 +0000-->
+                    </date>
+                    <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                        <!--1970-01-01 11:00:00 +0000-->
+                    </date>
+                    <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                        <!--2037-12-31 11:00:00 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FL5-n8-sN5" firstAttribute="top" secondItem="uAN-ze-s28" secondAttribute="bottom" id="3cY-MX-aFr"/>
+                <constraint firstAttribute="bottom" secondItem="WMx-pS-JsD" secondAttribute="bottom" id="9G4-Ah-Sj6"/>
+                <constraint firstAttribute="trailing" secondItem="FL5-n8-sN5" secondAttribute="trailing" id="NkO-zS-DIn"/>
+                <constraint firstItem="uAN-ze-s28" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Tdk-v3-gqm"/>
+                <constraint firstItem="WMx-pS-JsD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aNT-gg-RE9"/>
+                <constraint firstItem="uAN-ze-s28" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eW5-ss-ILb"/>
+                <constraint firstItem="FL5-n8-sN5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iBv-6I-mfp"/>
+                <constraint firstItem="WMx-pS-JsD" firstAttribute="top" secondItem="uAN-ze-s28" secondAttribute="bottom" id="r4i-Dg-Kdj"/>
+                <constraint firstAttribute="trailing" secondItem="uAN-ze-s28" secondAttribute="trailing" id="vZS-bC-5bM"/>
+                <constraint firstAttribute="trailing" secondItem="WMx-pS-JsD" secondAttribute="trailing" id="xRU-fG-hoV"/>
+                <constraint firstAttribute="bottom" secondItem="FL5-n8-sN5" secondAttribute="bottom" id="zne-8e-JBs"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dataPickView" destination="FL5-n8-sN5" id="uOz-PZ-SrO"/>
+                <outlet property="datePickView" destination="WMx-pS-JsD" id="txj-8V-sxA"/>
+                <outlet property="titleLabl" destination="xek-vj-AkR" id="d1i-rt-65q"/>
+            </connections>
+            <point key="canvasLocation" x="9.5" y="-131.5"/>
+        </view>
+    </objects>
+</document>

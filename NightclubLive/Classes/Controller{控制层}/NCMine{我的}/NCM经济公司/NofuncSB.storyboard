@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--我的经纪公司-->
+        <scene sceneID="wWo-Vf-r3M">
+            <objects>
+                <viewController storyboardIdentifier="NoFuncViewController" title="我的经纪公司" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g19-ih-8hk" customClass="NoFuncViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pw8-Ji-95f"/>
+                        <viewControllerLayoutGuide type="bottom" id="dgW-6R-FGp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6GC-4T-ejQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_centerpicture" translatesAutoresizingMaskIntoConstraints="NO" id="x4Z-O2-kyN">
+                                <rect key="frame" x="101" y="179.5" width="173" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153" id="Scq-wt-1lm"/>
+                                    <constraint firstAttribute="width" constant="173" id="eBb-m5-yOg"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oa3-nv-4uw">
+                                <rect key="frame" x="177.5" y="20" width="20" height="159.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="ZYb-AS-sct"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抱歉！功能暂未开通哦~" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLa-ni-ye9">
+                                <rect key="frame" x="0.0" y="348" width="375" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="eZa-o9-BNA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oa3-nv-4uw" firstAttribute="height" secondItem="6GC-4T-ejQ" secondAttribute="height" multiplier="0.239" id="1fe-HP-6uf"/>
+                            <constraint firstAttribute="trailing" secondItem="MLa-ni-ye9" secondAttribute="trailing" id="4LQ-uL-Hhr"/>
+                            <constraint firstItem="x4Z-O2-kyN" firstAttribute="top" secondItem="Oa3-nv-4uw" secondAttribute="bottom" id="HL9-kl-xqi"/>
+                            <constraint firstItem="MLa-ni-ye9" firstAttribute="top" secondItem="x4Z-O2-kyN" secondAttribute="bottom" constant="15.5" id="hdM-1O-Z25"/>
+                            <constraint firstItem="Oa3-nv-4uw" firstAttribute="top" secondItem="pw8-Ji-95f" secondAttribute="bottom" id="hxj-yK-hqR"/>
+                            <constraint firstItem="x4Z-O2-kyN" firstAttribute="centerX" secondItem="6GC-4T-ejQ" secondAttribute="centerX" id="pMc-K1-kCS"/>
+                            <constraint firstItem="MLa-ni-ye9" firstAttribute="leading" secondItem="6GC-4T-ejQ" secondAttribute="leading" id="sgK-Hm-oCM"/>
+                            <constraint firstItem="Oa3-nv-4uw" firstAttribute="centerX" secondItem="6GC-4T-ejQ" secondAttribute="centerX" id="xA0-3Y-LP7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vM9-kv-2Ry" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3038" y="-1285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_centerpicture" width="173" height="153"/>
+    </resources>
+</document>

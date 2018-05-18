@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--提现成功-->
+        <scene sceneID="ncx-dU-7d4">
+            <objects>
+                <viewController storyboardIdentifier="WithdrawSuccessViewController" title="提现成功" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MuE-k0-mgA" customClass="WithdrawSuccessViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sLh-8E-1oT"/>
+                        <viewControllerLayoutGuide type="bottom" id="AE6-nS-I0a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nqZ-vK-e76">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_checkout" translatesAutoresizingMaskIntoConstraints="NO" id="WfP-DL-gBG">
+                                <rect key="frame" x="150" y="74.5" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="FFU-IK-MV6"/>
+                                    <constraint firstAttribute="width" constant="75" id="SBI-eW-4Qa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提现成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Rc-qi-3TV">
+                                <rect key="frame" x="153" y="168.5" width="69.5" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="Rpp-sv-1S1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(提现会在2~3个工作日内到账)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEa-GM-t0s">
+                                <rect key="frame" x="70.5" y="198" width="234" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPG-CE-FDu">
+                                <rect key="frame" x="87.5" y="245.5" width="200" height="43"/>
+                                <color key="backgroundColor" red="0.75294117650000003" green="0.18823529410000001" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="3Q9-Wj-48Q"/>
+                                    <constraint firstAttribute="width" constant="200" id="JKf-l6-toc"/>
+                                </constraints>
+                                <state key="normal" title="确定">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskesBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="okClick:" destination="MuE-k0-mgA" eventType="touchUpInside" id="GSG-wH-AAU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BPG-CE-FDu" firstAttribute="centerX" secondItem="nqZ-vK-e76" secondAttribute="centerX" id="CL8-uY-cRp"/>
+                            <constraint firstItem="5Rc-qi-3TV" firstAttribute="centerX" secondItem="nqZ-vK-e76" secondAttribute="centerX" id="KYf-6L-Mbj"/>
+                            <constraint firstItem="WfP-DL-gBG" firstAttribute="top" secondItem="sLh-8E-1oT" secondAttribute="bottom" constant="54.5" id="LER-37-kjZ"/>
+                            <constraint firstItem="BPG-CE-FDu" firstAttribute="top" secondItem="WEa-GM-t0s" secondAttribute="bottom" constant="27" id="UJj-BO-Z8r"/>
+                            <constraint firstItem="WEa-GM-t0s" firstAttribute="top" secondItem="5Rc-qi-3TV" secondAttribute="bottom" constant="12.5" id="UOH-Gg-9In"/>
+                            <constraint firstItem="WEa-GM-t0s" firstAttribute="centerX" secondItem="nqZ-vK-e76" secondAttribute="centerX" id="cqF-AN-Ikj"/>
+                            <constraint firstItem="5Rc-qi-3TV" firstAttribute="top" secondItem="WfP-DL-gBG" secondAttribute="bottom" constant="19" id="nwa-Zo-uGH"/>
+                            <constraint firstItem="WfP-DL-gBG" firstAttribute="centerX" secondItem="nqZ-vK-e76" secondAttribute="centerX" id="o0c-lr-u6F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tipLabel" destination="WEa-GM-t0s" id="zOe-3p-Vfu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Cr-8P-aGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1303" y="2953"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_checkout" width="75" height="75"/>
+    </resources>
+</document>

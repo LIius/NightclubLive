@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CCDraggableCard-->
+        <scene sceneID="DlG-SI-303">
+            <objects>
+                <viewController storyboardIdentifier="TangTangVC" id="wFu-Pd-AXk" customClass="TangTangVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d4a-l5-GTc"/>
+                        <viewControllerLayoutGuide type="bottom" id="iiI-wy-ucs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B4n-00-hPg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nov-tB-ggT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="偶遇-背景" translatesAutoresizingMaskIntoConstraints="NO" id="SFw-PJ-TZ8">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weG-tA-gUZ">
+                                        <rect key="frame" x="60.5" y="554" width="52" height="52"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="52" id="Uzu-lv-pEd"/>
+                                            <constraint firstAttribute="height" constant="52" id="swX-d8-oy3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" image="红人圈-偶遇-跳过"/>
+                                        <connections>
+                                            <action selector="disLikeClick:" destination="wFu-Pd-AXk" eventType="touchUpInside" id="8H4-d9-0RC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrB-vd-RrO">
+                                        <rect key="frame" x="152.5" y="545" width="70" height="70"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="1tN-hn-aW5"/>
+                                            <constraint firstAttribute="width" constant="70" id="K2N-WN-47U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" image="红人圈-偶遇-送礼物按钮（付费不需要互相关注即可聊天）">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendGift:" destination="wFu-Pd-AXk" eventType="touchUpInside" id="jZR-Ib-OAg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i34-Pr-4Pc">
+                                        <rect key="frame" x="262.5" y="554" width="52" height="52"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="PIg-F9-5wX"/>
+                                            <constraint firstAttribute="width" constant="52" id="vGr-GB-8oF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" image="红人圈-偶遇-点赞按钮-未点赞状态"/>
+                                        <connections>
+                                            <action selector="likeClick:" destination="wFu-Pd-AXk" eventType="touchUpInside" id="kWm-Ff-zl7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="SFw-PJ-TZ8" secondAttribute="trailing" id="7KE-bz-fbl"/>
+                                    <constraint firstItem="SFw-PJ-TZ8" firstAttribute="top" secondItem="nov-tB-ggT" secondAttribute="top" id="DZ6-W0-c7q"/>
+                                    <constraint firstItem="SFw-PJ-TZ8" firstAttribute="leading" secondItem="nov-tB-ggT" secondAttribute="leading" id="HYE-Em-0vy"/>
+                                    <constraint firstAttribute="bottom" secondItem="SFw-PJ-TZ8" secondAttribute="bottom" id="SsX-FE-DaE"/>
+                                    <constraint firstItem="weG-tA-gUZ" firstAttribute="centerY" secondItem="UrB-vd-RrO" secondAttribute="centerY" id="ZfJ-do-PpK"/>
+                                    <constraint firstAttribute="bottom" secondItem="UrB-vd-RrO" secondAttribute="bottom" constant="52" id="aIk-GX-crb"/>
+                                    <constraint firstItem="UrB-vd-RrO" firstAttribute="leading" secondItem="weG-tA-gUZ" secondAttribute="trailing" constant="40" id="cgb-Oq-Sj1"/>
+                                    <constraint firstItem="UrB-vd-RrO" firstAttribute="centerX" secondItem="nov-tB-ggT" secondAttribute="centerX" id="eeP-Tn-lOY"/>
+                                    <constraint firstItem="i34-Pr-4Pc" firstAttribute="leading" secondItem="UrB-vd-RrO" secondAttribute="trailing" constant="40" id="igr-Dj-olh"/>
+                                    <constraint firstItem="i34-Pr-4Pc" firstAttribute="centerY" secondItem="UrB-vd-RrO" secondAttribute="centerY" id="isW-5q-iS8"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhs-Fh-tml">
+                                <rect key="frame" x="14" y="31" width="65" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="HUR-Ey-sGX"/>
+                                    <constraint firstAttribute="width" constant="65" id="TO9-3B-Zk9"/>
+                                </constraints>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_backwhite" translatesAutoresizingMaskIntoConstraints="NO" id="ybx-PK-qQi">
+                                <rect key="frame" x="14" y="41" width="8" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="Gv7-yR-aCj"/>
+                                    <constraint firstAttribute="width" constant="8" id="Vtc-q2-9ka"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="偶遇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRq-ho-Iyn">
+                                <rect key="frame" x="169" y="37.5" width="37" height="21.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="IzL-xY-bqO"/>
+                                    <constraint firstAttribute="width" secondItem="WRq-ho-Iyn" secondAttribute="height" multiplier="37:21" id="WG5-AE-c8g"/>
+                                    <constraint firstAttribute="height" constant="21.5" id="hCQ-Cu-dGd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWS-Pe-JnX">
+                                <rect key="frame" x="330" y="33.5" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OWS-Pe-JnX" secondAttribute="height" multiplier="31:30" id="1Fe-mT-vG6"/>
+                                    <constraint firstAttribute="width" constant="31" id="M2o-hu-G2j"/>
+                                    <constraint firstAttribute="height" constant="30" id="PUU-qp-xLJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="设置"/>
+                                <connections>
+                                    <action selector="settingClick:" destination="wFu-Pd-AXk" eventType="touchUpInside" id="UyP-me-28o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ybx-PK-qQi" firstAttribute="centerY" secondItem="WRq-ho-Iyn" secondAttribute="centerY" id="3Kb-CL-93i"/>
+                            <constraint firstItem="WRq-ho-Iyn" firstAttribute="centerY" secondItem="OWS-Pe-JnX" secondAttribute="centerY" id="AFA-Cr-bgz"/>
+                            <constraint firstItem="OWS-Pe-JnX" firstAttribute="top" secondItem="d4a-l5-GTc" secondAttribute="bottom" constant="13.5" id="Lv3-UU-5Gc"/>
+                            <constraint firstItem="WRq-ho-Iyn" firstAttribute="centerX" secondItem="B4n-00-hPg" secondAttribute="centerX" id="PHr-N3-ThJ"/>
+                            <constraint firstItem="ybx-PK-qQi" firstAttribute="leading" secondItem="B4n-00-hPg" secondAttribute="leading" constant="14" id="Yf3-wH-3n4"/>
+                            <constraint firstAttribute="trailing" secondItem="OWS-Pe-JnX" secondAttribute="trailing" constant="14" id="aTw-4F-cGX"/>
+                            <constraint firstItem="Qhs-Fh-tml" firstAttribute="centerY" secondItem="WRq-ho-Iyn" secondAttribute="centerY" id="bE5-yN-y2k"/>
+                            <constraint firstItem="WRq-ho-Iyn" firstAttribute="top" secondItem="d4a-l5-GTc" secondAttribute="bottom" constant="17.5" id="cA1-0E-NsC"/>
+                            <constraint firstItem="Qhs-Fh-tml" firstAttribute="leading" secondItem="B4n-00-hPg" secondAttribute="leading" constant="14" id="eMG-mM-tnq"/>
+                            <constraint firstAttribute="trailing" secondItem="nov-tB-ggT" secondAttribute="trailing" id="fVr-nH-Dvz"/>
+                            <constraint firstItem="nov-tB-ggT" firstAttribute="top" secondItem="B4n-00-hPg" secondAttribute="top" id="mrG-OP-Lli"/>
+                            <constraint firstItem="nov-tB-ggT" firstAttribute="leading" secondItem="B4n-00-hPg" secondAttribute="leading" id="pwT-DA-kFC"/>
+                            <constraint firstItem="nov-tB-ggT" firstAttribute="height" secondItem="B4n-00-hPg" secondAttribute="height" id="tGw-7K-Bil"/>
+                            <constraint firstItem="ybx-PK-qQi" firstAttribute="centerY" secondItem="OWS-Pe-JnX" secondAttribute="centerY" id="ux5-Di-XbM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CCDraggableCard" id="PxF-47-mvT"/>
+                    <connections>
+                        <outlet property="backBtn" destination="Qhs-Fh-tml" id="2DF-hh-I0l"/>
+                        <outlet property="detailBtn" destination="UrB-vd-RrO" id="7aG-S9-PJL"/>
+                        <outlet property="disLikeButton" destination="weG-tA-gUZ" id="QeZ-Zo-G7B"/>
+                        <outlet property="likeButton" destination="i34-Pr-4Pc" id="TJn-vr-G7r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jk7-h1-X4V" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216.80000000000001" y="1904.7976011994006"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_backwhite" width="16" height="16"/>
+        <image name="偶遇-背景" width="16" height="16"/>
+        <image name="红人圈-偶遇-点赞按钮-未点赞状态" width="16" height="16"/>
+        <image name="红人圈-偶遇-跳过" width="16" height="16"/>
+        <image name="红人圈-偶遇-送礼物按钮（付费不需要互相关注即可聊天）" width="16" height="16"/>
+    </resources>
+</document>

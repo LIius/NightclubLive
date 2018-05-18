@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--认证视频-->
+        <scene sceneID="ClF-6h-QXl">
+            <objects>
+                <viewController storyboardIdentifier="AuthVideoViewController" title="认证视频" id="V09-4g-csa" customClass="AuthVideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0F1-ch-Ywf"/>
+                        <viewControllerLayoutGuide type="bottom" id="A8E-Xd-Clg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GcN-3W-Die">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="306-34-K5U">
+                                <rect key="frame" x="0.0" y="20" width="375" height="480"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4BA-T5-Aaf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="480"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvx-Q9-gZn">
+                                        <rect key="frame" x="179.5" y="229" width="16" height="22"/>
+                                        <state key="normal" image="btn_play"/>
+                                        <connections>
+                                            <action selector="playVideoClick:" destination="V09-4g-csa" eventType="touchUpInside" id="UrY-qu-41w"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="4BA-T5-Aaf" firstAttribute="top" secondItem="306-34-K5U" secondAttribute="top" id="7ya-4r-HuJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="4BA-T5-Aaf" secondAttribute="trailing" id="A5T-8v-EJR"/>
+                                    <constraint firstItem="Hvx-Q9-gZn" firstAttribute="centerY" secondItem="306-34-K5U" secondAttribute="centerY" id="F4H-71-4MC"/>
+                                    <constraint firstAttribute="bottom" secondItem="4BA-T5-Aaf" secondAttribute="bottom" id="pxH-Zl-ep3"/>
+                                    <constraint firstItem="Hvx-Q9-gZn" firstAttribute="centerX" secondItem="306-34-K5U" secondAttribute="centerX" id="rbP-w4-5Mh"/>
+                                    <constraint firstItem="4BA-T5-Aaf" firstAttribute="leading" secondItem="306-34-K5U" secondAttribute="leading" id="trO-IH-cHP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="306-34-K5U" secondAttribute="trailing" id="Ja2-my-dot"/>
+                            <constraint firstItem="306-34-K5U" firstAttribute="top" secondItem="0F1-ch-Ywf" secondAttribute="bottom" id="KlU-cv-bsV"/>
+                            <constraint firstItem="A8E-Xd-Clg" firstAttribute="top" secondItem="306-34-K5U" secondAttribute="bottom" id="VO8-eF-7WK"/>
+                            <constraint firstItem="306-34-K5U" firstAttribute="leading" secondItem="GcN-3W-Die" secondAttribute="leading" id="ocZ-Fm-nt2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vcc-XI-gcK"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="500"/>
+                    <connections>
+                        <outlet property="contentView" destination="306-34-K5U" id="htk-Hr-U7w"/>
+                        <outlet property="coverIV" destination="4BA-T5-Aaf" id="y7Y-Nb-3TZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wgf-mq-KAh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4039" y="-2170"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_play" width="16" height="16"/>
+    </resources>
+</document>

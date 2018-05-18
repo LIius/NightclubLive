@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--申请情况-->
+        <scene sceneID="A4Z-As-cvO">
+            <objects>
+                <viewController storyboardIdentifier="BarRequestViewController" title="申请情况" id="fq3-uv-d9S" customClass="BarRequestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0PQ-X5-4rV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Opd-pS-YF5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="udE-V3-SYl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ah6-LD-bN5">
+                                <rect key="frame" x="155" y="56.5" width="65" height="65"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gFU-Pe-bCY">
+                                        <rect key="frame" x="1" y="1" width="63" height="63"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <real key="value" value="31.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.43921568630000002" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gFU-Pe-bCY" secondAttribute="bottom" constant="1" id="11K-sB-61L"/>
+                                    <constraint firstAttribute="height" constant="65" id="9a5-uB-Gll"/>
+                                    <constraint firstItem="gFU-Pe-bCY" firstAttribute="top" secondItem="ah6-LD-bN5" secondAttribute="top" constant="1" id="FT9-24-E5U"/>
+                                    <constraint firstAttribute="trailing" secondItem="gFU-Pe-bCY" secondAttribute="trailing" constant="1" id="JI2-Xl-bOx"/>
+                                    <constraint firstItem="gFU-Pe-bCY" firstAttribute="leading" secondItem="ah6-LD-bN5" secondAttribute="leading" constant="1" id="yes-VL-un9"/>
+                                    <constraint firstAttribute="width" constant="65" id="zAD-4b-pbB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="32.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z42-Ro-NUx">
+                                <rect key="frame" x="179.5" y="140.5" width="16.5" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="C6l-JX-yZj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="红人圈-头像-酒吧认证图标" translatesAutoresizingMaskIntoConstraints="NO" id="GSX-Bc-kNt">
+                                <rect key="frame" x="227" y="141.5" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="aHd-PB-FyU"/>
+                                    <constraint firstAttribute="width" constant="16" id="eto-HC-uBn"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_gantanhao" translatesAutoresizingMaskIntoConstraints="NO" id="CmS-Yf-cE1">
+                                <rect key="frame" x="126.5" y="183" width="14.5" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14.5" id="5tk-Bo-TVO"/>
+                                    <constraint firstAttribute="width" constant="14.5" id="fBF-Rl-lK1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="等待酒吧回复" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wig-HZ-R66">
+                                <rect key="frame" x="147.5" y="183.5" width="80" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="RCO-pS-8Gc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzQ-U6-Sae">
+                                <rect key="frame" x="20" y="224.5" width="335" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzs-OY-msr">
+                                <rect key="frame" x="73" y="271" width="105" height="37"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="0Qx-G4-Nrk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="联系酒吧">
+                                    <color key="titleColor" red="0.80392156859999997" green="0.30980392159999998" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="calkBSClick:" destination="fq3-uv-d9S" eventType="touchUpInside" id="EFK-Ft-COV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85m-eA-yOD">
+                                <rect key="frame" x="197" y="271" width="105" height="37"/>
+                                <color key="backgroundColor" red="0.80392156859999997" green="0.30980392159999998" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="提醒酒吧">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="alertMerchantClick:" destination="fq3-uv-d9S" eventType="touchUpInside" id="3Dy-nz-2zz"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSZ-cb-9LK">
+                                <rect key="frame" x="187" y="240.5" width="1" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="687-b9-a9W"/>
+                                    <constraint firstAttribute="height" constant="100" id="UEj-US-6Tm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wig-HZ-R66" firstAttribute="centerX" secondItem="udE-V3-SYl" secondAttribute="centerX" id="1cA-ud-1Qh"/>
+                            <constraint firstItem="Wig-HZ-R66" firstAttribute="leading" secondItem="CmS-Yf-cE1" secondAttribute="trailing" constant="6.5" id="3du-cd-sVR"/>
+                            <constraint firstItem="85m-eA-yOD" firstAttribute="width" secondItem="Vzs-OY-msr" secondAttribute="width" id="86t-9B-d6l"/>
+                            <constraint firstAttribute="trailing" secondItem="KzQ-U6-Sae" secondAttribute="trailing" constant="20" id="8Be-mP-dPt"/>
+                            <constraint firstItem="Vzs-OY-msr" firstAttribute="top" secondItem="KzQ-U6-Sae" secondAttribute="bottom" constant="30.5" id="Fr8-9h-Gz2"/>
+                            <constraint firstItem="85m-eA-yOD" firstAttribute="top" secondItem="KzQ-U6-Sae" secondAttribute="bottom" constant="30.5" id="Gqf-ew-Rvg"/>
+                            <constraint firstItem="vSZ-cb-9LK" firstAttribute="top" secondItem="KzQ-U6-Sae" secondAttribute="bottom" id="NKd-dl-Xxx"/>
+                            <constraint firstItem="KzQ-U6-Sae" firstAttribute="centerX" secondItem="udE-V3-SYl" secondAttribute="centerX" id="RqA-Ax-XWS"/>
+                            <constraint firstItem="GSX-Bc-kNt" firstAttribute="leading" secondItem="z42-Ro-NUx" secondAttribute="trailing" constant="31" id="bHN-NG-bt1"/>
+                            <constraint firstItem="KzQ-U6-Sae" firstAttribute="top" secondItem="Wig-HZ-R66" secondAttribute="bottom" constant="28" id="dnb-zR-Dht"/>
+                            <constraint firstItem="KzQ-U6-Sae" firstAttribute="leading" secondItem="udE-V3-SYl" secondAttribute="leading" constant="20" id="fu6-g5-Twi"/>
+                            <constraint firstItem="vSZ-cb-9LK" firstAttribute="centerX" secondItem="udE-V3-SYl" secondAttribute="centerX" id="gQV-Ks-Ac8"/>
+                            <constraint firstItem="85m-eA-yOD" firstAttribute="leading" secondItem="vSZ-cb-9LK" secondAttribute="trailing" constant="9" id="iAQ-ov-COv"/>
+                            <constraint firstItem="Vzs-OY-msr" firstAttribute="width" secondItem="udE-V3-SYl" secondAttribute="width" multiplier="0.28" id="kUk-Z6-Stx"/>
+                            <constraint firstItem="z42-Ro-NUx" firstAttribute="top" secondItem="ah6-LD-bN5" secondAttribute="bottom" constant="19" id="m3K-fa-d3g"/>
+                            <constraint firstItem="Wig-HZ-R66" firstAttribute="top" secondItem="z42-Ro-NUx" secondAttribute="bottom" constant="25" id="neI-iu-UVS"/>
+                            <constraint firstItem="z42-Ro-NUx" firstAttribute="centerX" secondItem="udE-V3-SYl" secondAttribute="centerX" id="o8K-Nl-1hq"/>
+                            <constraint firstItem="ah6-LD-bN5" firstAttribute="top" secondItem="0PQ-X5-4rV" secondAttribute="bottom" constant="36.5" id="p6C-OI-DNU"/>
+                            <constraint firstItem="ah6-LD-bN5" firstAttribute="centerX" secondItem="udE-V3-SYl" secondAttribute="centerX" id="p7T-28-m3p"/>
+                            <constraint firstItem="vSZ-cb-9LK" firstAttribute="leading" secondItem="Vzs-OY-msr" secondAttribute="trailing" constant="9" id="qgM-s1-ICh"/>
+                            <constraint firstItem="Wig-HZ-R66" firstAttribute="centerY" secondItem="CmS-Yf-cE1" secondAttribute="centerY" id="sBv-aX-jIS"/>
+                            <constraint firstItem="GSX-Bc-kNt" firstAttribute="centerY" secondItem="z42-Ro-NUx" secondAttribute="centerY" id="xRf-5a-SSN"/>
+                            <constraint firstItem="85m-eA-yOD" firstAttribute="height" secondItem="Vzs-OY-msr" secondAttribute="height" id="ztY-aE-wxe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barNameLabel" destination="z42-Ro-NUx" id="Tyq-hi-h4N"/>
+                        <outlet property="connectBarBtn" destination="Vzs-OY-msr" id="6If-4r-rr1"/>
+                        <outlet property="logoIV" destination="gFU-Pe-bCY" id="5DJ-d7-5FV"/>
+                        <outlet property="tipLabel" destination="KzQ-U6-Sae" id="RNz-f4-ngP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hCH-8l-Lb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6916" y="842"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_gantanhao" width="18" height="18"/>
+        <image name="红人圈-头像-酒吧认证图标" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CarCertificationViewController-->
+        <scene sceneID="pQB-PJ-c3a">
+            <objects>
+                <viewController storyboardIdentifier="CarCertificationViewController" title="CarCertificationViewController" id="NPT-gQ-BH6" customClass="CarCertificationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7bi-pw-JjA"/>
+                        <viewControllerLayoutGuide type="bottom" id="cF9-nd-5Zm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="08Q-y8-n5J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="证件正面照：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NB-0i-plo">
+                                <rect key="frame" x="15" y="85" width="150" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="5Ph-gP-8cG"/>
+                                    <constraint firstAttribute="width" constant="150" id="KW1-fg-kQi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmY-88-X1t">
+                                <rect key="frame" x="15" y="118" width="162" height="162"/>
+                                <color key="backgroundColor" red="0.82756131889999995" green="0.82768410439999995" blue="0.83086758849999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="btn_添加"/>
+                                <connections>
+                                    <action selector="carImageClick:" destination="NPT-gQ-BH6" eventType="touchUpInside" id="uW9-Li-AMs"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="车辆认证示例" translatesAutoresizingMaskIntoConstraints="NO" id="BNh-03-vxo">
+                                <rect key="frame" x="198" y="118" width="162" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BNh-03-vxo" secondAttribute="height" multiplier="1:1" id="xsD-G8-nX1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="行驶证照" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXD-AW-eil">
+                                <rect key="frame" x="15" y="288" width="162" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OLl-g0-Fxl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="示例图" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fi8-l6-n7N">
+                                <rect key="frame" x="198" y="288" width="162" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="fNn-sd-rog"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxU-z2-93t">
+                                <rect key="frame" x="30" y="401" width="329" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Qmh-ZG-u8l"/>
+                                </constraints>
+                                <string key="text">1、图片质量在50~500K之间
+2、需保证证件无遮挡，且清晰
+3、证件所有人续与职业认证人一致
+4、车辆认证最多只能认证3辆，认证之后不能修改</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.4941176471" green="0.49803921569999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CV8-nV-cgQ">
+                                <rect key="frame" x="15" y="531" width="345" height="44"/>
+                                <color key="backgroundColor" red="0.77647058820000003" green="0.3294117647" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="AAR-E9-1bc"/>
+                                </constraints>
+                                <state key="normal" title="提交"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="commitAction:" destination="NPT-gQ-BH6" eventType="touchUpInside" id="xyG-Ki-3TV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWj-pA-b0i">
+                                <rect key="frame" x="16" y="401" width="12" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="E1h-JP-9cu"/>
+                                    <constraint firstAttribute="height" constant="21" id="VOT-hQ-Vqn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.77647058820000003" green="0.3294117647" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3yT-Gn-fHS">
+                                <rect key="frame" x="15" y="331" width="345" height="46"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_car" translatesAutoresizingMaskIntoConstraints="NO" id="wch-mY-Hcx">
+                                        <rect key="frame" x="15" y="15" width="16" height="16"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_downtriangle" translatesAutoresizingMaskIntoConstraints="NO" id="9bf-Qg-SLO">
+                                        <rect key="frame" x="321.5" y="19" width="8.5" height="8.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="8.5" id="TL6-eG-eZC"/>
+                                            <constraint firstAttribute="height" constant="8.5" id="cGD-xH-aaz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择车辆" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBf-ay-a5w">
+                                        <rect key="frame" x="227.5" y="12.5" width="82" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="82" id="kzz-Zo-7JD"/>
+                                            <constraint firstAttribute="height" constant="21" id="zZf-eU-k5P"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ako-XJ-lcK">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="46"/>
+                                        <connections>
+                                            <action selector="selectCarClick:" destination="NPT-gQ-BH6" eventType="touchUpInside" id="abI-eE-GIn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="gBf-ay-a5w" firstAttribute="centerY" secondItem="3yT-Gn-fHS" secondAttribute="centerY" id="5bL-vM-eNK"/>
+                                    <constraint firstAttribute="height" constant="46" id="LZ6-Yp-ptA"/>
+                                    <constraint firstItem="9bf-Qg-SLO" firstAttribute="centerY" secondItem="3yT-Gn-fHS" secondAttribute="centerY" id="a8Y-Iq-TbX"/>
+                                    <constraint firstItem="wch-mY-Hcx" firstAttribute="centerY" secondItem="3yT-Gn-fHS" secondAttribute="centerY" id="awm-ps-tsP"/>
+                                    <constraint firstItem="wch-mY-Hcx" firstAttribute="leading" secondItem="3yT-Gn-fHS" secondAttribute="leading" constant="15" id="c4L-ci-pfi"/>
+                                    <constraint firstItem="ako-XJ-lcK" firstAttribute="height" secondItem="3yT-Gn-fHS" secondAttribute="height" id="gL5-iw-Nn2"/>
+                                    <constraint firstItem="9bf-Qg-SLO" firstAttribute="leading" secondItem="gBf-ay-a5w" secondAttribute="trailing" constant="12" id="ie8-QU-asd"/>
+                                    <constraint firstItem="ako-XJ-lcK" firstAttribute="width" secondItem="3yT-Gn-fHS" secondAttribute="width" id="lrP-fB-2FF"/>
+                                    <constraint firstItem="ako-XJ-lcK" firstAttribute="centerX" secondItem="3yT-Gn-fHS" secondAttribute="centerX" id="mar-j3-mt9"/>
+                                    <constraint firstItem="ako-XJ-lcK" firstAttribute="centerY" secondItem="3yT-Gn-fHS" secondAttribute="centerY" id="p5f-mo-EB4"/>
+                                    <constraint firstAttribute="trailing" secondItem="9bf-Qg-SLO" secondAttribute="trailing" constant="15" id="uOJ-AP-C6F"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="BNh-03-vxo" secondAttribute="trailing" constant="-1" id="03i-4z-bZS"/>
+                            <constraint firstItem="fmY-88-X1t" firstAttribute="leading" secondItem="08Q-y8-n5J" secondAttribute="leadingMargin" constant="-1" id="0iI-eP-o4p"/>
+                            <constraint firstItem="3yT-Gn-fHS" firstAttribute="trailing" secondItem="BNh-03-vxo" secondAttribute="trailing" id="0kT-jR-6hi"/>
+                            <constraint firstItem="CV8-nV-cgQ" firstAttribute="leading" secondItem="08Q-y8-n5J" secondAttribute="leadingMargin" constant="-1" id="0nI-2y-eUw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TxU-z2-93t" secondAttribute="trailing" id="1Nv-LM-ctv"/>
+                            <constraint firstItem="wXD-AW-eil" firstAttribute="width" secondItem="fmY-88-X1t" secondAttribute="width" id="1VU-6T-2fj"/>
+                            <constraint firstItem="TxU-z2-93t" firstAttribute="leading" secondItem="VWj-pA-b0i" secondAttribute="trailing" constant="2" id="5lG-Xs-BDc"/>
+                            <constraint firstItem="wXD-AW-eil" firstAttribute="top" secondItem="fmY-88-X1t" secondAttribute="bottom" constant="8" id="8Dv-DP-4a8"/>
+                            <constraint firstItem="CV8-nV-cgQ" firstAttribute="centerX" secondItem="08Q-y8-n5J" secondAttribute="centerX" id="8jI-7n-Ikt"/>
+                            <constraint firstItem="BNh-03-vxo" firstAttribute="top" secondItem="3NB-0i-plo" secondAttribute="bottom" constant="8" id="8qi-Lj-xD5"/>
+                            <constraint firstItem="BNh-03-vxo" firstAttribute="leading" secondItem="fmY-88-X1t" secondAttribute="trailing" constant="21" id="Crl-91-UNp"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="VWj-pA-b0i" secondAttribute="leading" id="L2v-ON-9bu"/>
+                            <constraint firstItem="Fi8-l6-n7N" firstAttribute="width" secondItem="BNh-03-vxo" secondAttribute="width" id="QmG-Bv-dOd"/>
+                            <constraint firstItem="3NB-0i-plo" firstAttribute="leading" secondItem="08Q-y8-n5J" secondAttribute="leadingMargin" constant="-1" id="bct-q3-AdV"/>
+                            <constraint firstItem="3yT-Gn-fHS" firstAttribute="leading" secondItem="fmY-88-X1t" secondAttribute="leading" id="dIw-Db-fAv"/>
+                            <constraint firstItem="TxU-z2-93t" firstAttribute="top" secondItem="3yT-Gn-fHS" secondAttribute="bottom" constant="24" id="gEl-SC-laT"/>
+                            <constraint firstItem="3yT-Gn-fHS" firstAttribute="top" secondItem="Fi8-l6-n7N" secondAttribute="bottom" constant="22" id="hYa-KJ-jpI"/>
+                            <constraint firstItem="wXD-AW-eil" firstAttribute="centerX" secondItem="fmY-88-X1t" secondAttribute="centerX" id="i79-Z0-Iu8"/>
+                            <constraint firstItem="BNh-03-vxo" firstAttribute="width" secondItem="fmY-88-X1t" secondAttribute="width" id="meA-nf-mr5"/>
+                            <constraint firstItem="Fi8-l6-n7N" firstAttribute="top" secondItem="BNh-03-vxo" secondAttribute="bottom" constant="8" id="tgl-LY-0Af"/>
+                            <constraint firstItem="3NB-0i-plo" firstAttribute="top" secondItem="7bi-pw-JjA" secondAttribute="bottom" constant="21" id="tsX-Wa-E3w"/>
+                            <constraint firstItem="VWj-pA-b0i" firstAttribute="top" secondItem="TxU-z2-93t" secondAttribute="top" id="ufn-tW-jxX"/>
+                            <constraint firstItem="fmY-88-X1t" firstAttribute="top" secondItem="3NB-0i-plo" secondAttribute="bottom" constant="8" id="vxP-4M-oaj"/>
+                            <constraint firstItem="Fi8-l6-n7N" firstAttribute="centerX" secondItem="BNh-03-vxo" secondAttribute="centerX" id="wQa-pE-nUe"/>
+                            <constraint firstItem="fmY-88-X1t" firstAttribute="width" secondItem="fmY-88-X1t" secondAttribute="height" multiplier="1:1" id="wvO-RH-3ig"/>
+                            <constraint firstItem="CV8-nV-cgQ" firstAttribute="top" secondItem="TxU-z2-93t" secondAttribute="bottom" constant="30" id="yaC-98-yDt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="车辆认证" id="bIj-jZ-bfq"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="carTypeLabel" destination="gBf-ay-a5w" id="5DH-MO-JYu"/>
+                        <outlet property="cardBtn" destination="fmY-88-X1t" id="ML6-21-D5o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XBR-bT-A0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="357"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_添加" width="16" height="16"/>
+        <image name="icon_car" width="16" height="16"/>
+        <image name="icon_downtriangle" width="16" height="16"/>
+        <image name="车辆认证示例" width="16" height="16"/>
+    </resources>
+</document>

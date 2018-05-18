@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--软件更新-->
+        <scene sceneID="9ps-lV-bLd">
+            <objects>
+                <viewController storyboardIdentifier="CheckVersionViewController" title="软件更新" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bFO-Na-FoE" customClass="CheckVersionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kv0-xH-XXm"/>
+                        <viewControllerLayoutGuide type="bottom" id="c25-Tu-uor"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QJp-Pg-oN3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_logo" translatesAutoresizingMaskIntoConstraints="NO" id="zzd-PQ-eQG">
+                                <rect key="frame" x="149" y="100.5" width="77" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="GLd-Nr-ltA"/>
+                                    <constraint firstAttribute="height" constant="77" id="y0u-oM-FAh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="夜店网" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyM-9L-lmp">
+                                <rect key="frame" x="0.0" y="187.5" width="375" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="kpy-NX-wn2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="检测版本中.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZX-Ta-Xnr">
+                                <rect key="frame" x="0.0" y="229.5" width="375" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="md7-ci-oyx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMP-Nx-I7R">
+                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.40784313725490196" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Mcx-Ql-8J9"/>
+                                </constraints>
+                                <state key="normal" title="立即更新">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateClick:" destination="bFO-Na-FoE" eventType="touchUpInside" id="SAu-um-u5s"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_introdutiontwo" translatesAutoresizingMaskIntoConstraints="NO" id="ced-Vo-qgn">
+                                <rect key="frame" x="108" y="583.5" width="159.5" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ced-Vo-qgn" secondAttribute="height" multiplier="319:54" id="ods-hR-J38"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yyM-9L-lmp" secondAttribute="trailing" id="4Iz-5b-831"/>
+                            <constraint firstItem="yyM-9L-lmp" firstAttribute="top" secondItem="zzd-PQ-eQG" secondAttribute="bottom" constant="10" id="4UQ-bv-XtC"/>
+                            <constraint firstAttribute="trailing" secondItem="aMP-Nx-I7R" secondAttribute="trailing" id="4m6-ui-dSO"/>
+                            <constraint firstItem="ZZX-Ta-Xnr" firstAttribute="top" secondItem="yyM-9L-lmp" secondAttribute="bottom" constant="24" id="85l-rq-gqz"/>
+                            <constraint firstItem="ZZX-Ta-Xnr" firstAttribute="leading" secondItem="QJp-Pg-oN3" secondAttribute="leading" id="FVG-vC-Lat"/>
+                            <constraint firstItem="zzd-PQ-eQG" firstAttribute="centerX" secondItem="QJp-Pg-oN3" secondAttribute="centerX" id="IWt-7W-yqO"/>
+                            <constraint firstAttribute="trailing" secondItem="ZZX-Ta-Xnr" secondAttribute="trailing" id="JE1-gj-q3c"/>
+                            <constraint firstItem="ced-Vo-qgn" firstAttribute="centerX" secondItem="QJp-Pg-oN3" secondAttribute="centerX" id="PW6-vf-fPC"/>
+                            <constraint firstItem="aMP-Nx-I7R" firstAttribute="centerX" secondItem="QJp-Pg-oN3" secondAttribute="centerX" id="VqI-ui-dnG"/>
+                            <constraint firstItem="aMP-Nx-I7R" firstAttribute="top" secondItem="ced-Vo-qgn" secondAttribute="bottom" constant="11.5" id="coH-m1-Abz"/>
+                            <constraint firstItem="yyM-9L-lmp" firstAttribute="leading" secondItem="QJp-Pg-oN3" secondAttribute="leading" id="h3e-o7-7d1"/>
+                            <constraint firstItem="c25-Tu-uor" firstAttribute="top" secondItem="aMP-Nx-I7R" secondAttribute="bottom" id="h95-N8-FIJ"/>
+                            <constraint firstItem="zzd-PQ-eQG" firstAttribute="top" secondItem="Kv0-xH-XXm" secondAttribute="bottom" constant="36.5" id="naD-cO-YzE"/>
+                            <constraint firstItem="aMP-Nx-I7R" firstAttribute="leading" secondItem="QJp-Pg-oN3" secondAttribute="leading" id="pGb-jy-r1Y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="版本更新" id="Fft-mk-eLJ"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="jz_wantsNavigationBarVisible" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="updateBtn" destination="aMP-Nx-I7R" id="C5H-6l-F6f"/>
+                        <outlet property="visionLabel" destination="ZZX-Ta-Xnr" id="Ivf-xl-1I7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Caq-4F-jT2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3458" y="-394"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_introdutiontwo" width="159" height="27"/>
+        <image name="icon_logo" width="97" height="97"/>
+    </resources>
+</document>

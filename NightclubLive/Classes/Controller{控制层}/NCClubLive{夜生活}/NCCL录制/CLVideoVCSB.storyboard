@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--VideoVC-->
+        <scene sceneID="WPy-ne-6fE">
+            <objects>
+                <viewController storyboardIdentifier="VideoVC" id="tgU-2L-k09" customClass="VideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="an4-1X-3EV"/>
+                        <viewControllerLayoutGuide type="bottom" id="nID-Sj-5oB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gOb-Yc-neF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqC-XB-LFz">
+                                <rect key="frame" x="0.0" y="503" width="375" height="164"/>
+                                <subviews>
+                                    <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8R-5e-YFf">
+                                        <rect key="frame" x="162" y="92" width="51" height="52"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="51" id="7yi-af-Isp"/>
+                                            <constraint firstAttribute="height" constant="52" id="EFa-tf-0vr"/>
+                                        </constraints>
+                                        <state key="normal" image="PaIpaibtn_开始"/>
+                                        <state key="highlighted" image="视频button"/>
+                                        <connections>
+                                            <action selector="recordClick:" destination="tgU-2L-k09" eventType="touchUpInside" id="59P-2o-rfN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLs-WL-KWT">
+                                        <rect key="frame" x="64" y="99" width="38" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="bdU-dT-dKb"/>
+                                            <constraint firstAttribute="width" constant="38" id="gaO-mg-Hvn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" image="PaIpaibtn_闪光">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeFlashlight:" destination="tgU-2L-k09" eventType="touchUpInside" id="Ong-n7-6j1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wp7-gM-4ZW">
+                                        <rect key="frame" x="273" y="103" width="37" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="F5v-46-726"/>
+                                            <constraint firstAttribute="width" constant="37" id="duX-2w-9ty"/>
+                                        </constraints>
+                                        <state key="normal" image="PaIpaibtn_反转">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeCamera" destination="tgU-2L-k09" eventType="touchUpInside" id="PxW-2l-5w8"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击按钮进行视频录制" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waL-i5-KGW">
+                                        <rect key="frame" x="126.5" y="25" width="123" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70158943969999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="O8R-5e-YFf" secondAttribute="bottom" constant="20" id="0lf-bc-KxO"/>
+                                    <constraint firstItem="Wp7-gM-4ZW" firstAttribute="leading" secondItem="O8R-5e-YFf" secondAttribute="trailing" constant="60" id="7gl-mc-o5O"/>
+                                    <constraint firstItem="O8R-5e-YFf" firstAttribute="centerX" secondItem="EqC-XB-LFz" secondAttribute="centerX" id="EH9-zC-RNl"/>
+                                    <constraint firstItem="waL-i5-KGW" firstAttribute="centerX" secondItem="EqC-XB-LFz" secondAttribute="centerX" id="GLv-nC-28N"/>
+                                    <constraint firstItem="Wp7-gM-4ZW" firstAttribute="centerY" secondItem="O8R-5e-YFf" secondAttribute="centerY" id="JFK-5I-olK"/>
+                                    <constraint firstItem="O8R-5e-YFf" firstAttribute="leading" secondItem="rLs-WL-KWT" secondAttribute="trailing" constant="60" id="JIX-oW-UVD"/>
+                                    <constraint firstItem="rLs-WL-KWT" firstAttribute="centerY" secondItem="O8R-5e-YFf" secondAttribute="centerY" id="NiN-2k-u5r"/>
+                                    <constraint firstAttribute="height" constant="164" id="XgF-7l-CUC"/>
+                                    <constraint firstItem="waL-i5-KGW" firstAttribute="top" secondItem="EqC-XB-LFz" secondAttribute="top" constant="25" id="jwZ-BW-5Zy"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJD-bQ-bbA">
+                                <rect key="frame" x="15" y="36" width="27" height="27"/>
+                                <state key="normal" image="PaIpaibtn_关闭"/>
+                                <connections>
+                                    <action selector="disMissAction:" destination="tgU-2L-k09" eventType="touchUpInside" id="lk9-kx-lfb"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXx-7q-C6J">
+                                <rect key="frame" x="34" y="463" width="307" height="40"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaIpailine" translatesAutoresizingMaskIntoConstraints="NO" id="Gi3-kD-E2a">
+                                        <rect key="frame" x="0.5" y="16.5" width="306" height="7"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aH8-WB-FJ7">
+                                        <rect key="frame" x="136.5" y="13" width="34" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Gi3-kD-E2a" firstAttribute="centerY" secondItem="DXx-7q-C6J" secondAttribute="centerY" id="1f7-CZ-ODJ"/>
+                                    <constraint firstItem="aH8-WB-FJ7" firstAttribute="centerX" secondItem="DXx-7q-C6J" secondAttribute="centerX" id="4S2-6l-dxT"/>
+                                    <constraint firstItem="aH8-WB-FJ7" firstAttribute="centerY" secondItem="DXx-7q-C6J" secondAttribute="centerY" id="GVx-Ov-rrS"/>
+                                    <constraint firstItem="Gi3-kD-E2a" firstAttribute="centerX" secondItem="DXx-7q-C6J" secondAttribute="centerX" id="NHb-p7-7N2"/>
+                                    <constraint firstAttribute="height" constant="40" id="Spe-jz-IST"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="DXx-7q-C6J" firstAttribute="leading" secondItem="gOb-Yc-neF" secondAttribute="leading" constant="34" id="75h-me-rfX"/>
+                            <constraint firstItem="EqC-XB-LFz" firstAttribute="leading" secondItem="gOb-Yc-neF" secondAttribute="leading" id="7jd-1A-Zar"/>
+                            <constraint firstAttribute="trailing" secondItem="EqC-XB-LFz" secondAttribute="trailing" id="8d1-aV-6hk"/>
+                            <constraint firstAttribute="trailing" secondItem="DXx-7q-C6J" secondAttribute="trailing" constant="34" id="FXR-HJ-ii0"/>
+                            <constraint firstItem="rJD-bQ-bbA" firstAttribute="leading" secondItem="gOb-Yc-neF" secondAttribute="leading" constant="15" id="M29-wb-q3n"/>
+                            <constraint firstItem="rJD-bQ-bbA" firstAttribute="top" secondItem="an4-1X-3EV" secondAttribute="bottom" constant="16" id="RWe-6G-Rai"/>
+                            <constraint firstItem="EqC-XB-LFz" firstAttribute="top" secondItem="DXx-7q-C6J" secondAttribute="bottom" id="Uv8-vT-3Ca"/>
+                            <constraint firstItem="nID-Sj-5oB" firstAttribute="top" secondItem="EqC-XB-LFz" secondAttribute="bottom" id="WcA-Yv-NJ8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backView" destination="gOb-Yc-neF" id="O43-ky-sy3"/>
+                        <outlet property="takeVideoButton" destination="O8R-5e-YFf" id="Esq-XC-phv"/>
+                        <outlet property="timeLable" destination="aH8-WB-FJ7" id="b3h-Oy-bZi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eK5-fr-Nxs" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6070" y="333"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PaIpaibtn_关闭" width="27" height="27"/>
+        <image name="PaIpaibtn_反转" width="37" height="30"/>
+        <image name="PaIpaibtn_开始" width="79" height="79"/>
+        <image name="PaIpaibtn_闪光" width="38" height="38"/>
+        <image name="PaIpailine" width="306" height="7"/>
+        <image name="视频button" width="16" height="16"/>
+    </resources>
+</document>

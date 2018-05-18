@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  JNdefine
+//
+//  Created by Titan on 16/3/15.
+//  Copyright © 2016年 Aaron Wong. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "PchHeader.h"
+#import "PchDefine.h"
+
+#endif

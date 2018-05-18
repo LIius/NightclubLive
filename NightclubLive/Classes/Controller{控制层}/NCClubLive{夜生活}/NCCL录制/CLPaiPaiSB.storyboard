@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Up Load VideoVC-->
+        <scene sceneID="Ifm-ob-6Gy">
+            <objects>
+                <viewController storyboardIdentifier="UpLoadVideoVC" id="mP6-Ws-hkN" customClass="UpLoadVideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HQF-l9-flt"/>
+                        <viewControllerLayoutGuide type="bottom" id="tCN-v3-Zlp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FKC-gh-j7c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="参与活动-发布视频背景" translatesAutoresizingMaskIntoConstraints="NO" id="Tc5-j0-wFk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuF-gD-6Ip">
+                                <rect key="frame" x="18" y="55" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="S5I-1g-hwi"/>
+                                    <constraint firstAttribute="height" constant="28" id="rt6-dS-Fz8"/>
+                                </constraints>
+                                <state key="normal" image="红人圈-关闭参与活动"/>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="夜店网活动规则说明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9i0-Jw-qEn">
+                                <rect key="frame" x="123" y="636" width="129" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGs-x3-VQ5">
+                                <rect key="frame" x="177.5" y="0.0" width="20" height="148"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="FdF-eb-9mJ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGW-eT-IUY">
+                                <rect key="frame" x="82.5" y="148" width="210" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="    录制视频上传" image="红人圈-活动参与-视频录制">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVB-PT-kNu">
+                                <rect key="frame" x="82.5" y="322" width="210" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="    本地视频上传" image="红人圈-活动参与-视频本地上传">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SNi-Bj-Yvq">
+                                <rect key="frame" x="182.5" y="212" width="10" height="110"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="gkm-7b-WSo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZGs-x3-VQ5" firstAttribute="centerX" secondItem="FKC-gh-j7c" secondAttribute="centerX" id="00t-XG-fys"/>
+                            <constraint firstItem="gGW-eT-IUY" firstAttribute="height" secondItem="Tc5-j0-wFk" secondAttribute="height" multiplier="64:667" id="1Wy-Lr-g3x"/>
+                            <constraint firstItem="gGW-eT-IUY" firstAttribute="top" secondItem="ZGs-x3-VQ5" secondAttribute="bottom" id="3ho-xw-Fco"/>
+                            <constraint firstItem="Tc5-j0-wFk" firstAttribute="top" secondItem="HQF-l9-flt" secondAttribute="bottom" constant="-20" id="3n8-yx-Ncb"/>
+                            <constraint firstItem="SNi-Bj-Yvq" firstAttribute="top" secondItem="gGW-eT-IUY" secondAttribute="bottom" id="5f6-IX-1H9"/>
+                            <constraint firstItem="WuF-gD-6Ip" firstAttribute="leading" secondItem="FKC-gh-j7c" secondAttribute="leading" constant="18" id="AXv-wQ-2ao"/>
+                            <constraint firstItem="tCN-v3-Zlp" firstAttribute="top" secondItem="Tc5-j0-wFk" secondAttribute="bottom" id="Eu5-lX-8gU"/>
+                            <constraint firstItem="tVB-PT-kNu" firstAttribute="centerX" secondItem="FKC-gh-j7c" secondAttribute="centerX" id="JfP-Vy-Y1B"/>
+                            <constraint firstItem="9i0-Jw-qEn" firstAttribute="centerX" secondItem="FKC-gh-j7c" secondAttribute="centerX" id="NdI-tg-Gie"/>
+                            <constraint firstItem="gGW-eT-IUY" firstAttribute="centerX" secondItem="FKC-gh-j7c" secondAttribute="centerX" id="Qzw-UB-a0H"/>
+                            <constraint firstAttribute="trailing" secondItem="Tc5-j0-wFk" secondAttribute="trailing" id="XvH-m6-gdN"/>
+                            <constraint firstItem="tVB-PT-kNu" firstAttribute="width" secondItem="gGW-eT-IUY" secondAttribute="width" id="YaK-xZ-mp6"/>
+                            <constraint firstItem="SNi-Bj-Yvq" firstAttribute="centerX" secondItem="FKC-gh-j7c" secondAttribute="centerX" id="duP-D5-m52"/>
+                            <constraint firstItem="tCN-v3-Zlp" firstAttribute="top" secondItem="9i0-Jw-qEn" secondAttribute="bottom" constant="14" id="eTc-5z-Iiq"/>
+                            <constraint firstItem="ZGs-x3-VQ5" firstAttribute="height" secondItem="Tc5-j0-wFk" secondAttribute="height" multiplier="148:667" id="hpw-ri-1YX"/>
+                            <constraint firstItem="SNi-Bj-Yvq" firstAttribute="height" secondItem="Tc5-j0-wFk" secondAttribute="height" multiplier="110:667" id="pGA-M5-seK"/>
+                            <constraint firstItem="Tc5-j0-wFk" firstAttribute="leading" secondItem="FKC-gh-j7c" secondAttribute="leading" id="rPa-1D-yv5"/>
+                            <constraint firstItem="tVB-PT-kNu" firstAttribute="height" secondItem="gGW-eT-IUY" secondAttribute="height" id="uBD-RY-Bbg"/>
+                            <constraint firstItem="ZGs-x3-VQ5" firstAttribute="top" secondItem="FKC-gh-j7c" secondAttribute="top" id="wME-CM-RBI"/>
+                            <constraint firstItem="WuF-gD-6Ip" firstAttribute="top" secondItem="FKC-gh-j7c" secondAttribute="topMargin" constant="35" id="wnl-z7-jT9"/>
+                            <constraint firstItem="tVB-PT-kNu" firstAttribute="top" secondItem="SNi-Bj-Yvq" secondAttribute="bottom" id="wyx-Od-UHi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="LocalVideoBtn" destination="tVB-PT-kNu" id="jH5-cE-9Gx"/>
+                        <outlet property="RecordingAction" destination="gGW-eT-IUY" id="Qcs-rS-elC"/>
+                        <outlet property="dissMissBtn" destination="WuF-gD-6Ip" id="TI4-A0-6Jd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yy5-5K-h3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3504.8000000000002" y="258.62068965517244"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="参与活动-发布视频背景" width="540" height="960"/>
+        <image name="红人圈-关闭参与活动" width="39" height="39"/>
+        <image name="红人圈-活动参与-视频录制" width="63" height="64"/>
+        <image name="红人圈-活动参与-视频本地上传" width="63" height="63"/>
+    </resources>
+</document>

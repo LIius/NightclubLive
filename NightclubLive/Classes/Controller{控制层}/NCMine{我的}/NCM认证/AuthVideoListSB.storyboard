@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--我的认证-->
+        <scene sceneID="ce9-Qz-bGQ">
+            <objects>
+                <tableViewController storyboardIdentifier="AuthVideoListVC" title="我的认证" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pKs-bZ-6li" customClass="AuthVideoListVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="319" sectionHeaderHeight="18" sectionFooterHeight="18" id="3Pn-ab-Pmy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AuthVideoCell" rowHeight="272" id="u2T-FK-GZd" customClass="AuthVideoCell">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="272"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u2T-FK-GZd" id="mEg-3s-Rty">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="272"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xx-M2-hsg">
+                                            <rect key="frame" x="15" y="15" width="345" height="182"/>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="视频认证背景" translatesAutoresizingMaskIntoConstraints="NO" id="tQ7-pk-jy2">
+                                            <rect key="frame" x="15" y="15" width="345" height="182"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_play" translatesAutoresizingMaskIntoConstraints="NO" id="D5u-6n-pPb">
+                                            <rect key="frame" x="161" y="79.5" width="53" height="53"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="D5u-6n-pPb" secondAttribute="height" id="6R9-nZ-CSv"/>
+                                                <constraint firstAttribute="width" constant="53" id="nIe-jd-Xu8"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="视频认证" translatesAutoresizingMaskIntoConstraints="NO" id="EGp-43-DuH">
+                                            <rect key="frame" x="161" y="79.5" width="53" height="53"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="EGp-43-DuH" secondAttribute="height" id="fJ4-31-Z0m"/>
+                                                <constraint firstAttribute="height" constant="53" id="rS2-KZ-DsF"/>
+                                                <constraint firstAttribute="width" constant="53" id="xUy-CH-Y0b"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本视频已通过夜店网平台认证" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FN3-Py-0qE">
+                                            <rect key="frame" x="29" y="212" width="159.5" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="nU1-Of-a35"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.19215686269999999" green="0.1960784314" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNZ-JR-p0U">
+                                            <rect key="frame" x="15" y="212" width="12" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="12" id="NSt-ih-JIs"/>
+                                                <constraint firstAttribute="height" constant="21" id="UPl-LC-gxS"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.77647058820000003" green="0.3294117647" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视频审核中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="po7-Vl-prn">
+                                            <rect key="frame" x="29" y="212" width="331" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="nc6-nA-3OU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.19215686269999999" green="0.1960784314" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击进行视频录制" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoe-zY-DNW">
+                                            <rect key="frame" x="134.5" y="132.5" width="106.5" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Q8V-91-VOa"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.1960784314" green="0.20000000000000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="5Xx-M2-hsg" secondAttribute="trailing" constant="15" id="5eR-wP-c7v"/>
+                                        <constraint firstAttribute="bottom" secondItem="5Xx-M2-hsg" secondAttribute="bottom" constant="75" id="6M3-oL-HGF"/>
+                                        <constraint firstItem="EGp-43-DuH" firstAttribute="centerY" secondItem="tQ7-pk-jy2" secondAttribute="centerY" id="DP0-3e-ifA"/>
+                                        <constraint firstItem="FN3-Py-0qE" firstAttribute="leading" secondItem="NNZ-JR-p0U" secondAttribute="trailing" constant="2" id="JCE-qq-qGb"/>
+                                        <constraint firstItem="po7-Vl-prn" firstAttribute="leading" secondItem="FN3-Py-0qE" secondAttribute="leading" id="M1V-tk-PfN"/>
+                                        <constraint firstItem="EGp-43-DuH" firstAttribute="centerX" secondItem="mEg-3s-Rty" secondAttribute="centerX" id="OEu-Q3-Wui"/>
+                                        <constraint firstItem="tQ7-pk-jy2" firstAttribute="leading" secondItem="mEg-3s-Rty" secondAttribute="leading" constant="15" id="QzP-pQ-WlQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="po7-Vl-prn" secondAttribute="trailing" constant="15" id="TW4-CK-Vuc"/>
+                                        <constraint firstItem="hoe-zY-DNW" firstAttribute="top" secondItem="EGp-43-DuH" secondAttribute="bottom" id="Vce-s6-ZQp"/>
+                                        <constraint firstItem="D5u-6n-pPb" firstAttribute="centerY" secondItem="5Xx-M2-hsg" secondAttribute="centerY" id="Yme-Gu-XR7"/>
+                                        <constraint firstItem="hoe-zY-DNW" firstAttribute="centerX" secondItem="mEg-3s-Rty" secondAttribute="centerX" id="bAt-hZ-m97"/>
+                                        <constraint firstItem="FN3-Py-0qE" firstAttribute="top" secondItem="NNZ-JR-p0U" secondAttribute="top" id="ekB-4R-0qw"/>
+                                        <constraint firstItem="5Xx-M2-hsg" firstAttribute="leading" secondItem="mEg-3s-Rty" secondAttribute="leading" constant="15" id="fop-64-awg"/>
+                                        <constraint firstItem="po7-Vl-prn" firstAttribute="top" secondItem="NNZ-JR-p0U" secondAttribute="top" id="g25-K3-Ydq"/>
+                                        <constraint firstAttribute="trailing" secondItem="tQ7-pk-jy2" secondAttribute="trailing" constant="15" id="haE-JF-Izv"/>
+                                        <constraint firstItem="po7-Vl-prn" firstAttribute="top" secondItem="NNZ-JR-p0U" secondAttribute="top" id="i9R-9f-bgS"/>
+                                        <constraint firstItem="D5u-6n-pPb" firstAttribute="centerX" secondItem="mEg-3s-Rty" secondAttribute="centerX" id="jcT-0l-KsE"/>
+                                        <constraint firstItem="tQ7-pk-jy2" firstAttribute="top" secondItem="mEg-3s-Rty" secondAttribute="top" constant="15" id="qLD-l3-bNF"/>
+                                        <constraint firstItem="NNZ-JR-p0U" firstAttribute="leading" secondItem="tQ7-pk-jy2" secondAttribute="leading" id="qh9-TP-Lgr"/>
+                                        <constraint firstItem="NNZ-JR-p0U" firstAttribute="top" secondItem="tQ7-pk-jy2" secondAttribute="bottom" constant="15" id="ttu-m3-cI3"/>
+                                        <constraint firstAttribute="bottom" secondItem="tQ7-pk-jy2" secondAttribute="bottom" constant="75" id="wfj-5C-CQj"/>
+                                        <constraint firstItem="5Xx-M2-hsg" firstAttribute="top" secondItem="mEg-3s-Rty" secondAttribute="top" constant="15" id="wtZ-xf-MzU"/>
+                                        <constraint firstItem="EGp-43-DuH" firstAttribute="centerX" secondItem="mEg-3s-Rty" secondAttribute="centerX" id="zis-F8-Q7r"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="noPassTipLabel" destination="po7-Vl-prn" id="3oM-aw-v9m"/>
+                                    <outlet property="palyBtn" destination="5Xx-M2-hsg" id="9pl-0S-zy9"/>
+                                    <outlet property="passTipLabel" destination="FN3-Py-0qE" id="7Uz-Zn-Ucw"/>
+                                    <outlet property="playIV" destination="D5u-6n-pPb" id="Gzp-3Y-UIn"/>
+                                    <outlet property="recordBtn" destination="EGp-43-DuH" id="Zar-dq-mT4"/>
+                                    <outlet property="recordTipLabel" destination="hoe-zY-DNW" id="EED-j6-EiR"/>
+                                    <outlet property="videoBackIV" destination="tQ7-pk-jy2" id="sdU-9N-aar"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pKs-bZ-6li" id="qSM-8U-inr"/>
+                            <outlet property="delegate" destination="pKs-bZ-6li" id="Qvd-Rm-ZgM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="我的认证" id="8Mg-Qx-jFm">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="R86-iF-VcO">
+                            <button key="customView" hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OaD-xx-XfI">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="重新认证"/>
+                                <connections>
+                                    <action selector="reAuthVideo:" destination="pKs-bZ-6li" eventType="touchUpInside" id="rez-U0-SqN"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="reAuthBtn" destination="OaD-xx-XfI" id="x6G-mC-VpM"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pfd-be-Cif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1573.5999999999999" y="1718.5907046476764"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_play" width="16" height="16"/>
+        <image name="视频认证" width="16" height="16"/>
+        <image name="视频认证背景" width="16" height="16"/>
+    </resources>
+</document>

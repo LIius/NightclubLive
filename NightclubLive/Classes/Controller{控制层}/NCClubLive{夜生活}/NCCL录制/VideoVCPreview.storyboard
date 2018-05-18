@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--VideoVC Preview-->
+        <scene sceneID="WPy-ne-6fE">
+            <objects>
+                <viewController storyboardIdentifier="VideoVCPreview" id="tgU-2L-k09" customClass="VideoVCPreview" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="an4-1X-3EV"/>
+                        <viewControllerLayoutGuide type="bottom" id="nID-Sj-5oB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gOb-Yc-neF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJD-bQ-bbA">
+                                <rect key="frame" x="15" y="36" width="27" height="27"/>
+                                <state key="normal" image="PaIpaibtn_关闭"/>
+                                <connections>
+                                    <action selector="disMissAction:" destination="tgU-2L-k09" eventType="touchUpInside" id="lk9-kx-lfb"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hUv-JQ-06h">
+                                <rect key="frame" x="0.0" y="289" width="375" height="378"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="378" id="fKd-2P-XPz"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="otb-cf-9zF">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dnv-jh-9AO">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="tgU-2L-k09" id="RHV-BO-mYn"/>
+                                    <outlet property="delegate" destination="tgU-2L-k09" id="oVi-gh-99T"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74901960779999999" green="0.74901960779999999" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="hUv-JQ-06h" firstAttribute="leading" secondItem="gOb-Yc-neF" secondAttribute="leading" id="K7N-xZ-ADc"/>
+                            <constraint firstItem="rJD-bQ-bbA" firstAttribute="leading" secondItem="gOb-Yc-neF" secondAttribute="leading" constant="15" id="M29-wb-q3n"/>
+                            <constraint firstItem="rJD-bQ-bbA" firstAttribute="top" secondItem="an4-1X-3EV" secondAttribute="bottom" constant="16" id="RWe-6G-Rai"/>
+                            <constraint firstAttribute="trailing" secondItem="hUv-JQ-06h" secondAttribute="trailing" id="s76-Yc-aU0"/>
+                            <constraint firstItem="nID-Sj-5oB" firstAttribute="top" secondItem="hUv-JQ-06h" secondAttribute="bottom" id="taY-MA-blq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backView" destination="gOb-Yc-neF" id="O43-ky-sy3"/>
+                        <outlet property="collectionView" destination="hUv-JQ-06h" id="hG2-od-gaq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eK5-fr-Nxs" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6069.6000000000004" y="332.38380809595208"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PaIpaibtn_关闭" width="27" height="27"/>
+    </resources>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SuccessInfoViewController-->
+        <scene sceneID="2B6-xr-ntg">
+            <objects>
+                <viewController storyboardIdentifier="SuccessInfoViewController" title="SuccessInfoViewController" id="GqA-br-S0K" customClass="SuccessInfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m2I-cm-4KJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Qc-Re-Z1Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M4S-rC-lqw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="红人圈-报名活动-支付成功" translatesAutoresizingMaskIntoConstraints="NO" id="JXX-ex-db7">
+                                <rect key="frame" x="150" y="118" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="8yL-hK-LFC"/>
+                                    <constraint firstAttribute="width" constant="75" id="E87-Mv-rVX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="付款成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FR-3M-qBT">
+                                <rect key="frame" x="16" y="210" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fal-Ir-wFa">
+                                <rect key="frame" x="87.5" y="276.5" width="200" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="AJq-vD-REu"/>
+                                    <constraint firstAttribute="height" constant="43" id="KhU-IX-yWV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="确定" backgroundImage="btn_提交">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="btn_提交"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="okClick:" destination="GqA-br-S0K" eventType="touchUpInside" id="SGU-aZ-B5X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fal-Ir-wFa" firstAttribute="centerX" secondItem="JXX-ex-db7" secondAttribute="centerX" id="5XA-uE-jS3"/>
+                            <constraint firstItem="3FR-3M-qBT" firstAttribute="centerX" secondItem="JXX-ex-db7" secondAttribute="centerX" id="8zi-DC-4Lf"/>
+                            <constraint firstItem="3FR-3M-qBT" firstAttribute="top" secondItem="JXX-ex-db7" secondAttribute="bottom" constant="17" id="Ez0-ew-YnZ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="3FR-3M-qBT" secondAttribute="leading" id="FNh-cG-BdB"/>
+                            <constraint firstItem="fal-Ir-wFa" firstAttribute="top" secondItem="3FR-3M-qBT" secondAttribute="bottom" constant="46" id="FgE-Ow-Af4"/>
+                            <constraint firstItem="JXX-ex-db7" firstAttribute="centerX" secondItem="M4S-rC-lqw" secondAttribute="centerX" id="NrO-HZ-FUS"/>
+                            <constraint firstItem="JXX-ex-db7" firstAttribute="top" secondItem="m2I-cm-4KJ" secondAttribute="bottom" constant="54" id="thH-dj-lhe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="提示" id="omJ-6b-5Iq"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="infoLab" destination="3FR-3M-qBT" id="spN-st-BaH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lc5-lw-WLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2249" y="-394"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_提交" width="16" height="16"/>
+        <image name="红人圈-报名活动-支付成功" width="16" height="16"/>
+    </resources>
+</document>

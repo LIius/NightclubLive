@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Npk-W1-ETd" customClass="GiftView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="253"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Fy6-fb-h1e">
+                    <rect key="frame" x="168" y="197" width="39" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="cAS-mq-QNQ"/>
+                    </constraints>
+                </pageControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwV-aL-261">
+                    <rect key="frame" x="0.0" y="211" width="375" height="1"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Tjz-dH-yxx"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KCB-H6-rbe">
+                    <rect key="frame" x="0.0" y="212" width="375" height="41"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_yiebite2" translatesAutoresizingMaskIntoConstraints="NO" id="gdn-Po-i2w">
+                            <rect key="frame" x="20" y="5" width="31" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="gdn-Po-i2w" secondAttribute="height" id="z7d-rs-0hv"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrp-eA-hzk">
+                            <rect key="frame" x="87" y="6" width="35" height="28"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="充值&gt;">
+                                <color key="titleColor" red="0.9882352941176471" green="0.92156862745098034" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McF-Gb-fhq">
+                            <rect key="frame" x="59" y="12" width="13" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mke-jH-7dg">
+                            <rect key="frame" x="219" y="6" width="52" height="28"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="数量：--">
+                                <color key="titleColor" red="0.87058823529999996" green="0.3411764706" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="countClick:" destination="Npk-W1-ETd" eventType="touchUpInside" id="ZiC-A3-FLN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zuz-Ws-r6W">
+                            <rect key="frame" x="295" y="7" width="68" height="27"/>
+                            <color key="backgroundColor" red="0.87058823529999996" green="0.3411764706" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Zuz-Ws-r6W" secondAttribute="height" multiplier="2.5" id="b5B-d1-487"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="赠送"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="sendClick:" destination="Npk-W1-ETd" eventType="touchUpInside" id="mxB-7w-hls"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TER-IY-IWW">
+                            <rect key="frame" x="219" y="27" width="52" height="1"/>
+                            <color key="backgroundColor" red="0.87058823529999996" green="0.3411764706" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="dUV-ET-bGQ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Zuz-Ws-r6W" secondAttribute="trailing" constant="12" id="0S0-Xd-4jX"/>
+                        <constraint firstItem="TER-IY-IWW" firstAttribute="leading" secondItem="Mke-jH-7dg" secondAttribute="leading" id="0aE-W4-O7M"/>
+                        <constraint firstItem="TER-IY-IWW" firstAttribute="width" secondItem="Mke-jH-7dg" secondAttribute="width" id="6Pc-e9-xaL"/>
+                        <constraint firstItem="gdn-Po-i2w" firstAttribute="centerY" secondItem="KCB-H6-rbe" secondAttribute="centerY" id="C4A-RQ-pXW"/>
+                        <constraint firstItem="Zuz-Ws-r6W" firstAttribute="leading" secondItem="Mke-jH-7dg" secondAttribute="trailing" constant="24" id="K3A-0t-b20"/>
+                        <constraint firstItem="Zuz-Ws-r6W" firstAttribute="centerY" secondItem="KCB-H6-rbe" secondAttribute="centerY" id="RM0-CH-1sM"/>
+                        <constraint firstItem="Mke-jH-7dg" firstAttribute="centerY" secondItem="KCB-H6-rbe" secondAttribute="centerY" id="TBU-y6-tpP"/>
+                        <constraint firstAttribute="bottom" secondItem="Zuz-Ws-r6W" secondAttribute="bottom" constant="7" id="VUR-pE-Nsi"/>
+                        <constraint firstItem="Zuz-Ws-r6W" firstAttribute="top" secondItem="KCB-H6-rbe" secondAttribute="top" constant="7" id="b1I-tV-KK8"/>
+                        <constraint firstAttribute="bottom" secondItem="gdn-Po-i2w" secondAttribute="bottom" constant="5" id="daS-wN-sqk"/>
+                        <constraint firstItem="McF-Gb-fhq" firstAttribute="centerY" secondItem="KCB-H6-rbe" secondAttribute="centerY" id="dla-0H-4Ze"/>
+                        <constraint firstItem="TER-IY-IWW" firstAttribute="top" secondItem="Mke-jH-7dg" secondAttribute="bottom" constant="-7" id="fjs-bk-YDE"/>
+                        <constraint firstItem="Xrp-eA-hzk" firstAttribute="leading" secondItem="McF-Gb-fhq" secondAttribute="trailing" constant="15.5" id="ruv-Mv-Jnl"/>
+                        <constraint firstItem="gdn-Po-i2w" firstAttribute="leading" secondItem="KCB-H6-rbe" secondAttribute="leading" constant="20" id="uJJ-vu-iAM"/>
+                        <constraint firstItem="Xrp-eA-hzk" firstAttribute="centerY" secondItem="KCB-H6-rbe" secondAttribute="centerY" id="ugH-cO-e7v"/>
+                        <constraint firstItem="McF-Gb-fhq" firstAttribute="leading" secondItem="gdn-Po-i2w" secondAttribute="trailing" constant="8" id="w7I-q9-4kN"/>
+                        <constraint firstItem="gdn-Po-i2w" firstAttribute="top" secondItem="KCB-H6-rbe" secondAttribute="top" constant="5" id="yku-vm-a4p"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="M2N-TK-24W">
+                    <rect key="frame" x="0.0" y="2" width="375" height="195"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OXV-dd-R3n">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="Npk-W1-ETd" id="YdQ-Je-Tx8"/>
+                        <outlet property="delegate" destination="Npk-W1-ETd" id="hQM-NK-n5e"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KCB-H6-rbe" secondAttribute="bottom" id="656-en-QDX"/>
+                <constraint firstItem="Fy6-fb-h1e" firstAttribute="top" secondItem="M2N-TK-24W" secondAttribute="bottom" id="7zg-bz-VDP"/>
+                <constraint firstAttribute="trailing" secondItem="KCB-H6-rbe" secondAttribute="trailing" id="EBp-5y-fd3"/>
+                <constraint firstAttribute="trailing" secondItem="M2N-TK-24W" secondAttribute="trailing" id="MKI-bC-DRX"/>
+                <constraint firstAttribute="trailing" secondItem="mwV-aL-261" secondAttribute="trailing" id="V9g-xB-4nI"/>
+                <constraint firstItem="M2N-TK-24W" firstAttribute="leading" secondItem="Npk-W1-ETd" secondAttribute="leading" id="X0w-9Z-vsY"/>
+                <constraint firstItem="KCB-H6-rbe" firstAttribute="leading" secondItem="Npk-W1-ETd" secondAttribute="leading" id="cKA-h9-pux"/>
+                <constraint firstItem="mwV-aL-261" firstAttribute="leading" secondItem="Npk-W1-ETd" secondAttribute="leading" id="gsq-03-FD7"/>
+                <constraint firstItem="M2N-TK-24W" firstAttribute="top" secondItem="Npk-W1-ETd" secondAttribute="top" constant="2" id="nRL-TN-wmi"/>
+                <constraint firstItem="mwV-aL-261" firstAttribute="top" secondItem="Fy6-fb-h1e" secondAttribute="bottom" id="qZ1-uG-b7b"/>
+                <constraint firstItem="KCB-H6-rbe" firstAttribute="top" secondItem="mwV-aL-261" secondAttribute="bottom" id="vIC-EZ-KqW"/>
+                <constraint firstItem="Fy6-fb-h1e" firstAttribute="centerX" secondItem="Npk-W1-ETd" secondAttribute="centerX" id="yc8-iO-YWL"/>
+                <constraint firstItem="M2N-TK-24W" firstAttribute="height" secondItem="Npk-W1-ETd" secondAttribute="height" multiplier="0.77" id="zXA-Wf-lDb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="countBtn" destination="Mke-jH-7dg" id="SZa-MW-y0H"/>
+                <outlet property="giftCollectionView" destination="M2N-TK-24W" id="0qQ-yB-CFh"/>
+                <outlet property="moneyLabel" destination="McF-Gb-fhq" id="972-dd-JqH"/>
+                <outlet property="pageControl" destination="Fy6-fb-h1e" id="4gN-yX-YdM"/>
+                <outlet property="rechargeBtn" destination="Xrp-eA-hzk" id="LeD-ga-qIT"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_yiebite2" width="16" height="16"/>
+    </resources>
+</document>

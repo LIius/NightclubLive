@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--认证商户-->
+        <scene sceneID="fKI-Xg-HkN">
+            <objects>
+                <viewController storyboardIdentifier="BusinessNoAuthViewController" title="认证商户" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XCA-qV-UaR" customClass="BusinessNoAuthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="joY-yu-CbO"/>
+                        <viewControllerLayoutGuide type="bottom" id="s4z-5H-kEQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qIY-CV-Auq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_renzhenshanghu" translatesAutoresizingMaskIntoConstraints="NO" id="sKH-6h-Q86">
+                                <rect key="frame" x="155" y="56.5" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Kzy-ip-CL2"/>
+                                    <constraint firstAttribute="width" constant="65" id="udk-Bu-HHE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="尚未认证商户" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eM2-F5-7UJ">
+                                <rect key="frame" x="0.0" y="143" width="375" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="pSv-sj-dj3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="进行酒吧认证或者经济公司认证可以让您在夜店网APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pek-9n-UtC">
+                                <rect key="frame" x="0.0" y="170" width="375" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="fj8-TM-H9O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="获得更好的服务和管理体验哦~" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSk-GE-ysa">
+                                <rect key="frame" x="0.0" y="187" width="375" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="WgP-6V-HUg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWS-0C-Z8U">
+                                <rect key="frame" x="25" y="222" width="325" height="40"/>
+                                <color key="backgroundColor" red="0.80392156859999997" green="0.30980392159999998" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="irm-RM-khY"/>
+                                </constraints>
+                                <state key="normal" title="立即认证">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="autoClick:" destination="XCA-qV-UaR" eventType="touchUpInside" id="4bQ-08-2Ar"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uWS-0C-Z8U" firstAttribute="top" secondItem="VSk-GE-ysa" secondAttribute="bottom" constant="23" id="32C-sX-hkX"/>
+                            <constraint firstAttribute="trailing" secondItem="uWS-0C-Z8U" secondAttribute="trailing" constant="25" id="59t-cr-t0b"/>
+                            <constraint firstItem="eM2-F5-7UJ" firstAttribute="leading" secondItem="qIY-CV-Auq" secondAttribute="leading" id="6IG-xa-7Vm"/>
+                            <constraint firstItem="VSk-GE-ysa" firstAttribute="leading" secondItem="qIY-CV-Auq" secondAttribute="leading" id="8zD-uf-RoL"/>
+                            <constraint firstAttribute="trailing" secondItem="eM2-F5-7UJ" secondAttribute="trailing" id="CRh-SA-MPE"/>
+                            <constraint firstItem="sKH-6h-Q86" firstAttribute="centerX" secondItem="qIY-CV-Auq" secondAttribute="centerX" id="LQk-wX-SlT"/>
+                            <constraint firstItem="VSk-GE-ysa" firstAttribute="top" secondItem="pek-9n-UtC" secondAttribute="bottom" constant="5" id="Q9r-Lq-e3Q"/>
+                            <constraint firstItem="sKH-6h-Q86" firstAttribute="top" secondItem="joY-yu-CbO" secondAttribute="bottom" constant="36.5" id="S63-oV-qxF"/>
+                            <constraint firstItem="uWS-0C-Z8U" firstAttribute="leading" secondItem="qIY-CV-Auq" secondAttribute="leading" constant="25" id="UUh-8N-s4H"/>
+                            <constraint firstItem="pek-9n-UtC" firstAttribute="top" secondItem="eM2-F5-7UJ" secondAttribute="bottom" constant="12" id="bef-Xn-J1B"/>
+                            <constraint firstItem="eM2-F5-7UJ" firstAttribute="top" secondItem="sKH-6h-Q86" secondAttribute="bottom" constant="21.5" id="frS-8l-ufk"/>
+                            <constraint firstAttribute="trailing" secondItem="VSk-GE-ysa" secondAttribute="trailing" id="riG-jy-dPe"/>
+                            <constraint firstAttribute="trailing" secondItem="pek-9n-UtC" secondAttribute="trailing" id="vSH-w2-8Gb"/>
+                            <constraint firstItem="pek-9n-UtC" firstAttribute="leading" secondItem="qIY-CV-Auq" secondAttribute="leading" id="vxK-xM-Eqc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn" destination="uWS-0C-Z8U" id="a2V-ZD-Fy1"/>
+                        <outlet property="contentLabel" destination="VSk-GE-ysa" id="o7T-EW-YLC"/>
+                        <outlet property="titleLabel" destination="eM2-F5-7UJ" id="oM7-06-xhQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZy-s0-2tl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="577" y="-1952"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_renzhenshanghu" width="16" height="16"/>
+    </resources>
+</document>

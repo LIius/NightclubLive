@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="DP5-aN-9Ac" customClass="TipsView">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otT-Wt-g8d">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否进行职业认证？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpM-kB-fDY">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVD-ei-3r0">
+                    <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="U6R-cr-tok"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkT-qB-Nql">
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.76078431369999999" green="0.18823529410000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WcM-ZI-ZdD">
+                    <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="7kj-cp-sTC"/>
+                        <constraint firstAttribute="width" constant="1" id="LvI-LJ-n2d"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tug-T9-Jjt">
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="下次">
+                        <color key="titleColor" red="0.38039215686274508" green="0.38039215686274508" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.1960784314" green="0.55294117649999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tug-T9-Jjt" firstAttribute="top" secondItem="lVD-ei-3r0" secondAttribute="bottom" constant="1" id="4L5-m1-OYP"/>
+                <constraint firstAttribute="bottom" secondItem="tug-T9-Jjt" secondAttribute="bottom" constant="3" id="Gt8-94-lcE"/>
+                <constraint firstItem="otT-Wt-g8d" firstAttribute="centerX" secondItem="DP5-aN-9Ac" secondAttribute="centerX" id="H4P-Wg-ZLe"/>
+                <constraint firstAttribute="bottom" secondItem="WcM-ZI-ZdD" secondAttribute="bottom" constant="10" id="LeB-zZ-RIc"/>
+                <constraint firstAttribute="bottom" secondItem="zkT-qB-Nql" secondAttribute="bottom" id="Pyj-1r-oCn"/>
+                <constraint firstItem="hpM-kB-fDY" firstAttribute="centerX" secondItem="otT-Wt-g8d" secondAttribute="centerX" id="QIJ-jz-moR"/>
+                <constraint firstItem="lVD-ei-3r0" firstAttribute="top" secondItem="hpM-kB-fDY" secondAttribute="bottom" constant="26" id="Qhp-Ae-sXo"/>
+                <constraint firstItem="lVD-ei-3r0" firstAttribute="leading" secondItem="DP5-aN-9Ac" secondAttribute="leading" id="Qpm-cL-3gR"/>
+                <constraint firstAttribute="trailing" secondItem="zkT-qB-Nql" secondAttribute="trailing" id="RPc-bT-bhx"/>
+                <constraint firstItem="zkT-qB-Nql" firstAttribute="leading" secondItem="WcM-ZI-ZdD" secondAttribute="trailing" id="YwS-LI-Eht"/>
+                <constraint firstItem="tug-T9-Jjt" firstAttribute="leading" secondItem="DP5-aN-9Ac" secondAttribute="leading" constant="8" id="e2C-KG-lew"/>
+                <constraint firstItem="WcM-ZI-ZdD" firstAttribute="centerX" secondItem="DP5-aN-9Ac" secondAttribute="centerX" id="iWJ-wb-Ue9"/>
+                <constraint firstItem="zkT-qB-Nql" firstAttribute="top" secondItem="lVD-ei-3r0" secondAttribute="bottom" id="lxf-Eu-TzR"/>
+                <constraint firstItem="WcM-ZI-ZdD" firstAttribute="leading" secondItem="tug-T9-Jjt" secondAttribute="trailing" constant="8" id="mPk-Z4-7T6"/>
+                <constraint firstAttribute="trailing" secondItem="lVD-ei-3r0" secondAttribute="trailing" id="pHG-Nd-Gsw"/>
+                <constraint firstItem="otT-Wt-g8d" firstAttribute="top" secondItem="DP5-aN-9Ac" secondAttribute="top" constant="16" id="sXU-qc-VBK"/>
+                <constraint firstItem="hpM-kB-fDY" firstAttribute="top" secondItem="otT-Wt-g8d" secondAttribute="bottom" constant="22" id="yR4-H1-QfN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="doneBtn" destination="zkT-qB-Nql" id="mzv-NB-2OZ"/>
+                <outlet property="oneBtn" destination="tug-T9-Jjt" id="hQ5-Hd-mLc"/>
+                <outlet property="titleLable" destination="hpM-kB-fDY" id="tlW-gc-0je"/>
+            </connections>
+            <point key="canvasLocation" x="167" y="68"/>
+        </view>
+    </objects>
+</document>

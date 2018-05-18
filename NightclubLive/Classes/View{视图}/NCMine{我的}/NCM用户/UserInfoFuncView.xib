@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserInfoFuncView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFi-uO-fw5">
+                    <rect key="frame" x="0.0" y="24" width="109" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="  聊天" image="icon_chatwith">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyA-ae-zvE">
+                    <rect key="frame" x="133" y="24" width="109" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="  关注" image="icon_heartcarel">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5f-zf-qqY">
+                    <rect key="frame" x="266.5" y="24" width="108.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="  送礼" image="icon_presentline">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNs-Tb-KfY">
+                    <rect key="frame" x="109" y="0.0" width="24" height="66"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flS-9P-Nzr">
+                            <rect key="frame" x="12" y="20.5" width="0.5" height="25"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="9qi-Gq-vQn"/>
+                                <constraint firstAttribute="width" constant="0.5" id="vVi-VP-A2l"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="flS-9P-Nzr" firstAttribute="centerX" secondItem="xNs-Tb-KfY" secondAttribute="centerX" id="HOG-ot-iOr"/>
+                        <constraint firstItem="flS-9P-Nzr" firstAttribute="centerY" secondItem="xNs-Tb-KfY" secondAttribute="centerY" id="hDU-7t-gOW"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ApJ-Ie-dtW">
+                    <rect key="frame" x="242" y="0.0" width="24.5" height="66"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFq-Br-6rc">
+                            <rect key="frame" x="12" y="20.5" width="0.5" height="25"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="3wM-3g-Nau"/>
+                                <constraint firstAttribute="width" constant="0.5" id="zif-DF-Glu"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="XFq-Br-6rc" firstAttribute="centerY" secondItem="ApJ-Ie-dtW" secondAttribute="centerY" id="4Ej-s0-kuh"/>
+                        <constraint firstItem="XFq-Br-6rc" firstAttribute="centerX" secondItem="ApJ-Ie-dtW" secondAttribute="centerX" id="oH7-gA-ibq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.80392156859999997" green="0.30980392159999998" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="nyA-ae-zvE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IGJ-UI-QLG"/>
+                <constraint firstItem="xNs-Tb-KfY" firstAttribute="leading" secondItem="iFi-uO-fw5" secondAttribute="trailing" id="IWo-YP-jN2"/>
+                <constraint firstItem="xNs-Tb-KfY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Iy8-y0-axl"/>
+                <constraint firstItem="ApJ-Ie-dtW" firstAttribute="leading" secondItem="nyA-ae-zvE" secondAttribute="trailing" id="LOE-Ud-mI3"/>
+                <constraint firstItem="nyA-ae-zvE" firstAttribute="width" secondItem="iFi-uO-fw5" secondAttribute="width" id="LnQ-yL-L7w"/>
+                <constraint firstItem="iFi-uO-fw5" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.29" id="NHP-8l-dZU"/>
+                <constraint firstItem="iFi-uO-fw5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QFr-yi-iSJ"/>
+                <constraint firstItem="nyA-ae-zvE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RxS-4q-G63"/>
+                <constraint firstItem="k5f-zf-qqY" firstAttribute="height" secondItem="iFi-uO-fw5" secondAttribute="height" id="UOf-we-Egd"/>
+                <constraint firstItem="k5f-zf-qqY" firstAttribute="leading" secondItem="ApJ-Ie-dtW" secondAttribute="trailing" id="WKT-Wl-lMX"/>
+                <constraint firstAttribute="bottom" secondItem="ApJ-Ie-dtW" secondAttribute="bottom" id="YOr-Qy-Ey5"/>
+                <constraint firstItem="nyA-ae-zvE" firstAttribute="leading" secondItem="xNs-Tb-KfY" secondAttribute="trailing" id="cfg-TH-IdS"/>
+                <constraint firstItem="k5f-zf-qqY" firstAttribute="width" secondItem="iFi-uO-fw5" secondAttribute="width" id="dYY-CZ-mPg"/>
+                <constraint firstAttribute="trailing" secondItem="k5f-zf-qqY" secondAttribute="trailing" id="e0o-P8-vsD"/>
+                <constraint firstItem="iFi-uO-fw5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ibW-0F-25y"/>
+                <constraint firstItem="k5f-zf-qqY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="msW-6R-jkn"/>
+                <constraint firstAttribute="bottom" secondItem="xNs-Tb-KfY" secondAttribute="bottom" id="n4t-lg-Gxl"/>
+                <constraint firstItem="nyA-ae-zvE" firstAttribute="height" secondItem="iFi-uO-fw5" secondAttribute="height" id="nma-b7-8BJ"/>
+                <constraint firstItem="ApJ-Ie-dtW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yoQ-jF-6Vr"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="blackBtn" destination="k5f-zf-qqY" id="asj-K0-bYA"/>
+                <outlet property="chatBtn" destination="iFi-uO-fw5" id="Bnc-2h-P0H"/>
+                <outlet property="followBtn" destination="nyA-ae-zvE" id="6Gl-sU-H1I"/>
+            </connections>
+            <point key="canvasLocation" x="-44.5" y="-192"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_chatwith" width="15" height="15"/>
+        <image name="icon_heartcarel" width="16" height="14"/>
+        <image name="icon_presentline" width="15" height="16"/>
+    </resources>
+</document>

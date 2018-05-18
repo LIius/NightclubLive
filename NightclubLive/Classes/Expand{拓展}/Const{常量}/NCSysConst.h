@@ -1,0 +1,75 @@
+//
+//  NCSysConst.h
+//  NightclubLive
+//
+//  Created by CodeRiding on 2017/10/14.
+//  Copyright © 2017年 WanBo. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface NCSysConst : NSObject
+
+
+#pragma mark - NOTIFICATION
+
+UIKIT_EXTERN NSString * const NOTIFICATION_SLRELEASEDYNAMIC;
+
+UIKIT_EXTERN NSString * const NOTIFICATION_SLPAIPAILIST;
+
+UIKIT_EXTERN NSString * const NOTIFICATION_LOGINFINISH;
+
+UIKIT_EXTERN NSString * const NOTIFICATION_LOGINOUT;
+
+UIKIT_EXTERN NSString * const NOTIFICATION_ALIPAYREBACK;
+
+UIKIT_EXTERN NSString * const NOTIFICATION_WEICHATREBACK;
+
+UIKIT_EXTERN NSString * const NOTIFICATION_SWITCHHEAERT;
+
+
+#pragma mark - USERDEFAULT
+
+UIKIT_EXTERN NSString * const USERDEFAULT_PHONE;
+
+UIKIT_EXTERN NSString * const USERDEFAULT_PASSWORD;
+
+UIKIT_EXTERN NSString * const USERDEFAULT_THIRDUID;
+
+UIKIT_EXTERN NSString * const USERDEFAULT_SOURCE;
+
+UIKIT_EXTERN NSString * const USERDEFAULT_KEYCHAIN_SERVERNAME;
+
+UIKIT_EXTERN NSString * const USERDEFAULT_USERDATAKEY1;
+
+UIKIT_EXTERN NSString * const USERDEFAULT_USERDATAKEY2;
+
+UIKIT_EXTERN NSString * const USERDEFAULT_YUNXINTOKEN;
+
+UIKIT_EXTERN NSString * const USERDEFAULT_USERTOKEN;
+
+UIKIT_EXTERN NSString * const USERDEFAULT_LAST_RUN_VERSION;
+
+
+
+#pragma mark - 推送Rcommand
+
+// 删除家人推送
+UIKIT_EXTERN NSString * const RCOMMAND_AUTH_DEL;
+
+
+
+
+
+#pragma mark - URL
+
+UIKIT_EXTERN NSString * const URL_DEV;
+
+UIKIT_EXTERN NSString * const URL_ONLINE;
+
+UIKIT_EXTERN NSString * const URL_TTPBASE;
+
+UIKIT_EXTERN NSString * const URL_QINIU;
+
+
+@end

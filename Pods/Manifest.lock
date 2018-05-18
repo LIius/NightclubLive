@@ -1,0 +1,140 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - AMap2DMap (4.6.0):
+    - AMapFoundation (~> 1.3)
+  - AMapFoundation (1.4.3)
+  - AMapLocation (2.3.1):
+    - AMapFoundation (~> 1.3)
+  - AMapSearch (4.5.0):
+    - AMapFoundation (~> 1.2)
+  - BarrageRenderer (1.8.1)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
+  - HappyDNS (0.3.12)
+  - IQKeyboardManager (5.0.7)
+  - M80AttributedLabel (1.5.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (0.9.2)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.15.3)
+  - MMPopupView (1.7.2):
+    - Masonry
+  - NIMSDK (3.3.0)
+  - NJKWebViewProgress (0.2.3):
+    - NJKWebViewProgress/Core (= 0.2.3)
+    - NJKWebViewProgress/ProgressView (= 0.2.3)
+  - NJKWebViewProgress/Core (0.2.3)
+  - NJKWebViewProgress/ProgressView (0.2.3)
+  - NSDictionary-NilSafe (0.2.0)
+  - PureLayout (3.0.2)
+  - QBImagePickerController (3.4.0)
+  - Qiniu (7.2.3):
+    - HappyDNS (~> 0.3)
+  - Reachability (3.0.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - RMStore (0.7.1):
+    - RMStore/Core (= 0.7.1)
+  - RMStore/Core (0.7.1)
+  - SAMKeychain (1.5.3)
+  - Toast (3.1.0)
+  - TYAttributedLabel (2.6.6)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (= 3.1.0)
+  - AMap2DMap (= 4.6.0)
+  - AMapLocation (= 2.3.1)
+  - AMapSearch (= 4.5.0)
+  - BarrageRenderer (= 1.8.1)
+  - BlocksKit
+  - FMDB (= 2.7.2)
+  - IQKeyboardManager
+  - M80AttributedLabel (= 1.5.0)
+  - MBProgressHUD (= 0.9.2)
+  - MJExtension
+  - MJRefresh (= 3.1.15.3)
+  - MMPopupView
+  - NIMSDK (= 3.3.0)
+  - NJKWebViewProgress
+  - NSDictionary-NilSafe
+  - PureLayout (= 3.0.2)
+  - QBImagePickerController (= 3.4.0)
+  - Qiniu (= 7.2.3)
+  - Reachability (= 3.0.0)
+  - ReactiveCocoa (= 2.5)
+  - RMStore (= 0.7.1)
+  - SAMKeychain (= 1.5.3)
+  - Toast (= 3.1.0)
+  - TYAttributedLabel (= 2.6.6)
+  - YYModel (= 1.0.4)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AMap2DMap: 003fa70526983a1469ae6fc3323a6ee8b5ccf53c
+  AMapFoundation: 973682cfe60b92efd73a8ef8f1144fa0fa8e1296
+  AMapLocation: 6016f0e09c127461c9c8e36945f34c0f037ad962
+  AMapSearch: 7a6ebc20a42e34a021b042b047f198082fc2fc30
+  BarrageRenderer: a5dc2c9d38028be819b64ed2b7dfa240490b378a
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  HappyDNS: 691a3041128055d09866f86e6e9ca90f24da1f18
+  IQKeyboardManager: 0bfa4607d39924116b5c0c8b55b5d789288b5cba
+  M80AttributedLabel: f2bf6608c3fa5475d3f753d4cc7e41dc2359c6c2
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  MMPopupView: fe1dd010824029dfb632fdf1a531db5dd5386020
+  NIMSDK: e8bbffed00573f15da73a7ba7748c1da8dc2aa50
+  NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
+  NSDictionary-NilSafe: 3df5056bf920974cb9822ed24bfc41af44225201
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+  Qiniu: ae0fea1cc379fae1560d8748ac537e0fbeb8626e
+  Reachability: 31e4272bd8378e094beaf6609dc182c85c4e6574
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  RMStore: 64ba13a9c040e3b7572765d169f77175cd3243e5
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
+  TYAttributedLabel: cb8fc910d97eb5224936d4f692a78e042af691b2
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: feae4707ca0986d73ab1a20c68177c4241fcad09
+
+COCOAPODS: 1.3.1

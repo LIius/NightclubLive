@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tang Tang Pair SuccessVC-->
+        <scene sceneID="lez-iW-THh">
+            <objects>
+                <viewController storyboardIdentifier="TangTangPairSuccessVC" id="dCk-G8-c4d" customClass="TangTangPairSuccessVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JaY-Ib-OiW"/>
+                        <viewControllerLayoutGuide type="bottom" id="ixl-Vh-zol"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eaC-RM-ic5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f19-8y-Hxk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="偶遇-背景" translatesAutoresizingMaskIntoConstraints="NO" id="D1V-f3-BVe">
+                                        <rect key="frame" x="0.0" y="-20" width="375" height="687"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOj-6T-hzo">
+                                        <rect key="frame" x="47.5" y="421.5" width="280" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="7bk-Nh-mbV"/>
+                                            <constraint firstAttribute="width" constant="280" id="Tx6-2n-tbr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="开始聊天" backgroundImage="tangtangbtn_1"/>
+                                        <connections>
+                                            <action selector="chatClick:" destination="dCk-G8-c4d" eventType="touchUpInside" id="612-0l-kr9"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你可以" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRw-yp-efJ">
+                                        <rect key="frame" x="161.5" y="358" width="52" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tangtangimg_2" translatesAutoresizingMaskIntoConstraints="NO" id="kZs-ed-Z2j">
+                                        <rect key="frame" x="224" y="155.5" width="137" height="137"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="70"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="红人圈-偶遇-点赞按钮-已点赞状态" translatesAutoresizingMaskIntoConstraints="NO" id="Ii2-zO-0dd">
+                                        <rect key="frame" x="165" y="201.5" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="1iG-0y-6BW"/>
+                                            <constraint firstAttribute="height" constant="45" id="GRK-Wr-PTG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="配对成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39t-6J-0zU">
+                                        <rect key="frame" x="151" y="26" width="73.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tangtangimg_1" translatesAutoresizingMaskIntoConstraints="NO" id="rcb-sl-Er8">
+                                        <rect key="frame" x="14" y="155.5" width="137" height="137"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rcb-sl-Er8" secondAttribute="height" multiplier="1:1" id="s8D-hO-2xe"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="70"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你和Jay 互相喜欢对方" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ico-wj-UAk">
+                                        <rect key="frame" x="103" y="327.5" width="169.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dE9-Ir-QY9">
+                                        <rect key="frame" x="47.5" y="489.5" width="280" height="43"/>
+                                        <state key="normal" image="偶遇-继续偶遇按钮"/>
+                                        <connections>
+                                            <action selector="backClick:" destination="dCk-G8-c4d" eventType="touchUpInside" id="AZT-2D-mak"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfk-rY-fEl">
+                                        <rect key="frame" x="162.5" y="620" width="50" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="返回首页"/>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="红人圈-偶遇-返回首页" translatesAutoresizingMaskIntoConstraints="NO" id="EUq-2q-7C4">
+                                        <rect key="frame" x="212.5" y="625.5" width="16" height="16"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="kOj-6T-hzo" firstAttribute="top" secondItem="eRw-yp-efJ" secondAttribute="bottom" constant="43" id="0QP-Th-uY1"/>
+                                    <constraint firstItem="39t-6J-0zU" firstAttribute="top" secondItem="f19-8y-Hxk" secondAttribute="top" constant="26" id="4kH-CW-pPB"/>
+                                    <constraint firstItem="rcb-sl-Er8" firstAttribute="leading" secondItem="f19-8y-Hxk" secondAttribute="leading" constant="14" id="5Lm-B2-aDe"/>
+                                    <constraint firstItem="EUq-2q-7C4" firstAttribute="centerY" secondItem="zfk-rY-fEl" secondAttribute="centerY" id="94g-J0-pTI"/>
+                                    <constraint firstItem="EUq-2q-7C4" firstAttribute="leading" secondItem="zfk-rY-fEl" secondAttribute="trailing" id="CDd-v2-5XJ"/>
+                                    <constraint firstItem="ico-wj-UAk" firstAttribute="top" secondItem="rcb-sl-Er8" secondAttribute="bottom" constant="35" id="CIv-bk-Cl2"/>
+                                    <constraint firstItem="eRw-yp-efJ" firstAttribute="top" secondItem="ico-wj-UAk" secondAttribute="bottom" constant="10" id="COf-gq-CJV"/>
+                                    <constraint firstItem="kZs-ed-Z2j" firstAttribute="centerY" secondItem="rcb-sl-Er8" secondAttribute="centerY" id="D9J-WT-RYK"/>
+                                    <constraint firstItem="rcb-sl-Er8" firstAttribute="top" secondItem="39t-6J-0zU" secondAttribute="bottom" constant="108" id="EDz-Hv-Knz"/>
+                                    <constraint firstItem="D1V-f3-BVe" firstAttribute="top" secondItem="f19-8y-Hxk" secondAttribute="top" constant="-20" id="OtH-8c-g8Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="D1V-f3-BVe" secondAttribute="trailing" id="TEi-hK-Ced"/>
+                                    <constraint firstItem="kZs-ed-Z2j" firstAttribute="width" secondItem="rcb-sl-Er8" secondAttribute="width" id="ZnP-7l-I70"/>
+                                    <constraint firstItem="dE9-Ir-QY9" firstAttribute="top" secondItem="kOj-6T-hzo" secondAttribute="bottom" constant="25" id="ZvU-sq-9fM"/>
+                                    <constraint firstItem="kZs-ed-Z2j" firstAttribute="height" secondItem="rcb-sl-Er8" secondAttribute="height" id="aO4-xQ-vn6"/>
+                                    <constraint firstItem="Ii2-zO-0dd" firstAttribute="centerX" secondItem="f19-8y-Hxk" secondAttribute="centerX" id="aj8-Q8-JBT"/>
+                                    <constraint firstItem="Ii2-zO-0dd" firstAttribute="centerY" secondItem="rcb-sl-Er8" secondAttribute="centerY" id="ale-4p-w7o"/>
+                                    <constraint firstItem="eRw-yp-efJ" firstAttribute="centerX" secondItem="f19-8y-Hxk" secondAttribute="centerX" id="b3w-lk-3m6"/>
+                                    <constraint firstItem="39t-6J-0zU" firstAttribute="centerX" secondItem="f19-8y-Hxk" secondAttribute="centerX" id="cdC-xr-uQy"/>
+                                    <constraint firstItem="kOj-6T-hzo" firstAttribute="centerX" secondItem="f19-8y-Hxk" secondAttribute="centerX" id="fwU-ki-lTT"/>
+                                    <constraint firstItem="zfk-rY-fEl" firstAttribute="centerX" secondItem="f19-8y-Hxk" secondAttribute="centerX" id="lbf-Jx-OBF"/>
+                                    <constraint firstItem="ico-wj-UAk" firstAttribute="centerX" secondItem="f19-8y-Hxk" secondAttribute="centerX" id="leG-Bw-4ht"/>
+                                    <constraint firstItem="Ii2-zO-0dd" firstAttribute="leading" secondItem="rcb-sl-Er8" secondAttribute="trailing" constant="14" id="mpA-Kg-fls"/>
+                                    <constraint firstAttribute="trailing" secondItem="kZs-ed-Z2j" secondAttribute="trailing" constant="14" id="qil-68-5i9"/>
+                                    <constraint firstItem="dE9-Ir-QY9" firstAttribute="centerX" secondItem="f19-8y-Hxk" secondAttribute="centerX" id="sEq-bx-3j7"/>
+                                    <constraint firstItem="D1V-f3-BVe" firstAttribute="leading" secondItem="f19-8y-Hxk" secondAttribute="leading" id="saJ-1z-syl"/>
+                                    <constraint firstAttribute="bottom" secondItem="D1V-f3-BVe" secondAttribute="bottom" id="vQX-Oy-FPd"/>
+                                    <constraint firstAttribute="bottom" secondItem="zfk-rY-fEl" secondAttribute="bottom" constant="20" id="xnL-iM-5wJ"/>
+                                    <constraint firstItem="dE9-Ir-QY9" firstAttribute="width" secondItem="kOj-6T-hzo" secondAttribute="width" id="y6T-q7-knH"/>
+                                    <constraint firstItem="dE9-Ir-QY9" firstAttribute="height" secondItem="kOj-6T-hzo" secondAttribute="height" id="zx4-u6-VW7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f19-8y-Hxk" firstAttribute="top" secondItem="eaC-RM-ic5" secondAttribute="top" id="L9H-pm-7Dl"/>
+                            <constraint firstItem="f19-8y-Hxk" firstAttribute="leading" secondItem="eaC-RM-ic5" secondAttribute="leading" id="mgR-sJ-jsS"/>
+                            <constraint firstAttribute="trailing" secondItem="f19-8y-Hxk" secondAttribute="trailing" id="rAD-nK-v6P"/>
+                            <constraint firstItem="ixl-Vh-zol" firstAttribute="top" secondItem="f19-8y-Hxk" secondAttribute="bottom" id="ruR-sa-EMk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="heImageView" destination="kZs-ed-Z2j" id="Zs1-I1-wtt"/>
+                        <outlet property="popHomeBtn" destination="zfk-rY-fEl" id="i9y-ze-PjD"/>
+                        <outlet property="selfImageView" destination="rcb-sl-Er8" id="m8X-2T-eR0"/>
+                        <outlet property="topContstantH" destination="4kH-CW-pPB" id="4ID-Ko-wOL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ffd-gG-7Nk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="2821.4392803598203"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tangtangbtn_1" width="16" height="16"/>
+        <image name="tangtangimg_1" width="16" height="16"/>
+        <image name="tangtangimg_2" width="16" height="16"/>
+        <image name="偶遇-继续偶遇按钮" width="16" height="16"/>
+        <image name="偶遇-背景" width="16" height="16"/>
+        <image name="红人圈-偶遇-点赞按钮-已点赞状态" width="16" height="16"/>
+        <image name="红人圈-偶遇-返回首页" width="16" height="16"/>
+    </resources>
+</document>

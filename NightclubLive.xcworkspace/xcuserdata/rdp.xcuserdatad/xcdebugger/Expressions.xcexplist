@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[MyHeadVoiceTVC tableView:numberOfRowsInSection:]:MyHeadVoiceTVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dataSource">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UserTagView addUserTagToView]:UserTagView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.frame">
+            </PersistentString>
+            <PersistentString
+               value = "self.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__32-[AuthVideoListVC refreshMethod]_block_invoke:AuthVideoListVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dataSource">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__32-[UserInfo loginWithCompletion:]_block_invoke:UserInfo.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PayBaseRequest parameters]:PayListRequest.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ClubCircleDynamicDetailSuperVC viewDidLoad]:ClubCircleDynamicDetailVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationItem">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NetRedCircleBarCell setModel:]:NetRedCircleBarCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_nameLabel.frame">
+            </PersistentString>
+            <PersistentString
+               value = "_distanceLabel.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__31-[MyHeadVoiceTVC refreshMethod]_block_invoke:MyHeadVoiceTVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[UserTagView setModel:]:UserTagView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_carIndexs">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NetRedCircleBarModel setSeller_name:]:NetRedCircleListModel.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_nameWidth">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UserInfo loginWithCompletion:]:UserInfo.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--VideoCertificationViewController-->
+        <scene sceneID="wQB-iC-ZhR">
+            <objects>
+                <viewController storyboardIdentifier="VideoCertificationViewController" title="VideoCertificationViewController" id="h83-2g-Gty" customClass="VideoCertificationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="quB-Zt-CLl"/>
+                        <viewControllerLayoutGuide type="bottom" id="KZz-2W-kUe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BKQ-rE-stj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XNb-6Q-Vbl">
+                                <rect key="frame" x="15" y="79" width="345" height="194"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="视频认证背景" translatesAutoresizingMaskIntoConstraints="NO" id="42j-MP-jJm">
+                                <rect key="frame" x="15" y="79" width="345" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="194" id="oMK-Lq-X5l"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_play" translatesAutoresizingMaskIntoConstraints="NO" id="yQR-UL-PE3">
+                                <rect key="frame" x="161" y="149.5" width="53" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yQR-UL-PE3" secondAttribute="height" multiplier="1:1" id="do5-9M-pQR"/>
+                                    <constraint firstAttribute="width" constant="53" id="tEm-lS-og3"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="视频认证" translatesAutoresizingMaskIntoConstraints="NO" id="X4L-x2-3bO">
+                                <rect key="frame" x="161" y="129" width="53" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="X4L-x2-3bO" secondAttribute="height" multiplier="1:1" id="BGe-Ho-7fT"/>
+                                    <constraint firstAttribute="width" constant="53" id="lUv-kW-iZs"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P4-sV-Mdd">
+                                <rect key="frame" x="15" y="79" width="345" height="194"/>
+                                <connections>
+                                    <action selector="recordVideoAction:" destination="h83-2g-Gty" eventType="touchUpInside" id="X14-G2-iUO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为保证您的视频可以顺利通过，请勿上传虚假、无效及其他非本人视频" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXg-lN-Tyj">
+                                <rect key="frame" x="29" y="288" width="329" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="P23-CQ-afe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.1960784314" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qj4-tt-bK5">
+                                <rect key="frame" x="15" y="288" width="12" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="URS-Dh-nGJ"/>
+                                    <constraint firstAttribute="width" constant="12" id="evD-qw-MDj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.77647058820000003" green="0.3294117647" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击进行视频录制" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anR-n9-yQ9">
+                                <rect key="frame" x="16" y="182" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2k6-eU-I39"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.1960784314" green="0.20000000000000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本视频已通过夜店网平台认证" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QA9-Jm-Z9L">
+                                <rect key="frame" x="29" y="288" width="329" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="A1m-yw-7pq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.1960784314" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XNb-6Q-Vbl" firstAttribute="top" secondItem="0P4-sV-Mdd" secondAttribute="top" id="5Ia-qI-wsU"/>
+                            <constraint firstItem="yQR-UL-PE3" firstAttribute="centerY" secondItem="42j-MP-jJm" secondAttribute="centerY" id="5Kj-aM-zjk"/>
+                            <constraint firstItem="X4L-x2-3bO" firstAttribute="centerX" secondItem="42j-MP-jJm" secondAttribute="centerX" id="6hv-Le-8j9"/>
+                            <constraint firstItem="anR-n9-yQ9" firstAttribute="top" secondItem="X4L-x2-3bO" secondAttribute="bottom" id="7N4-EO-DVq"/>
+                            <constraint firstItem="anR-n9-yQ9" firstAttribute="centerX" secondItem="42j-MP-jJm" secondAttribute="centerX" id="7oX-W9-ORx"/>
+                            <constraint firstItem="QA9-Jm-Z9L" firstAttribute="leading" secondItem="Qj4-tt-bK5" secondAttribute="trailing" constant="2" id="Eah-yX-4fV"/>
+                            <constraint firstItem="Qj4-tt-bK5" firstAttribute="leading" secondItem="BKQ-rE-stj" secondAttribute="leadingMargin" constant="-1" id="F1j-LG-Aot"/>
+                            <constraint firstItem="XNb-6Q-Vbl" firstAttribute="height" secondItem="0P4-sV-Mdd" secondAttribute="height" id="H0y-HP-nwn"/>
+                            <constraint firstItem="Qj4-tt-bK5" firstAttribute="top" secondItem="0P4-sV-Mdd" secondAttribute="bottom" constant="15" id="HWH-id-NNh"/>
+                            <constraint firstItem="42j-MP-jJm" firstAttribute="leading" secondItem="BKQ-rE-stj" secondAttribute="leading" constant="15" id="NhV-aJ-iX2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RXg-lN-Tyj" secondAttribute="trailing" constant="1" id="O1D-Ic-MoZ"/>
+                            <constraint firstItem="RXg-lN-Tyj" firstAttribute="top" secondItem="0P4-sV-Mdd" secondAttribute="bottom" constant="15" id="Rri-5J-uEf"/>
+                            <constraint firstItem="42j-MP-jJm" firstAttribute="top" secondItem="X4L-x2-3bO" secondAttribute="bottom" constant="-103" id="Uoh-cu-VRz"/>
+                            <constraint firstItem="X4L-x2-3bO" firstAttribute="width" secondItem="X4L-x2-3bO" secondAttribute="height" multiplier="1:1" id="XIu-F3-Peh"/>
+                            <constraint firstItem="0P4-sV-Mdd" firstAttribute="width" secondItem="42j-MP-jJm" secondAttribute="width" id="Xuf-7B-2fz"/>
+                            <constraint firstItem="QA9-Jm-Z9L" firstAttribute="top" secondItem="0P4-sV-Mdd" secondAttribute="bottom" constant="15" id="Yns-Zc-TWI"/>
+                            <constraint firstItem="yQR-UL-PE3" firstAttribute="centerX" secondItem="42j-MP-jJm" secondAttribute="centerX" id="cOK-L2-Le6"/>
+                            <constraint firstItem="42j-MP-jJm" firstAttribute="top" secondItem="quB-Zt-CLl" secondAttribute="bottom" constant="15" id="cux-ek-Fm3"/>
+                            <constraint firstItem="anR-n9-yQ9" firstAttribute="leading" secondItem="42j-MP-jJm" secondAttribute="trailing" constant="-344" id="gS5-2Q-ZmS"/>
+                            <constraint firstItem="RXg-lN-Tyj" firstAttribute="leading" secondItem="Qj4-tt-bK5" secondAttribute="trailing" constant="2" id="ikn-TK-Epz"/>
+                            <constraint firstItem="0P4-sV-Mdd" firstAttribute="centerY" secondItem="42j-MP-jJm" secondAttribute="centerY" id="lAP-K7-pNP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QA9-Jm-Z9L" secondAttribute="trailing" constant="1" id="nDU-cM-uNB"/>
+                            <constraint firstItem="0P4-sV-Mdd" firstAttribute="centerX" secondItem="42j-MP-jJm" secondAttribute="centerX" id="pjF-W2-riz"/>
+                            <constraint firstItem="42j-MP-jJm" firstAttribute="centerX" secondItem="BKQ-rE-stj" secondAttribute="centerX" id="sn5-Jy-cKA"/>
+                            <constraint firstItem="XNb-6Q-Vbl" firstAttribute="leading" secondItem="0P4-sV-Mdd" secondAttribute="leading" id="tbO-8B-E5c"/>
+                            <constraint firstItem="XNb-6Q-Vbl" firstAttribute="width" secondItem="0P4-sV-Mdd" secondAttribute="width" id="v3g-zu-Eng"/>
+                            <constraint firstItem="0P4-sV-Mdd" firstAttribute="height" secondItem="42j-MP-jJm" secondAttribute="height" id="wMB-HS-nfW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的认证" id="xLu-bU-rYS">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="rpa-fr-MTD">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="V3A-Nc-cuL">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="重新认证"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="contentBtn" destination="0P4-sV-Mdd" id="OvY-PA-Y9f"/>
+                        <outlet property="contentView" destination="XNb-6Q-Vbl" id="eDh-mM-7CW"/>
+                        <outlet property="memoLab" destination="RXg-lN-Tyj" id="QxT-27-Cfg"/>
+                        <outlet property="passMemoLab" destination="QA9-Jm-Z9L" id="R0B-Xg-p6o"/>
+                        <outlet property="recordImgV" destination="X4L-x2-3bO" id="OLD-S5-9fQ"/>
+                        <outlet property="recordMemoLab" destination="anR-n9-yQ9" id="SKw-aS-tR4"/>
+                        <outlet property="videoBgView" destination="42j-MP-jJm" id="PgP-rd-vSM"/>
+                        <outlet property="videoPlayImgV" destination="yQR-UL-PE3" id="nlX-V8-gzf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZ8-5d-5GP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="1719"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_play" width="16" height="16"/>
+        <image name="视频认证" width="16" height="16"/>
+        <image name="视频认证背景" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gZP-Tc-lqA" customClass="AddressBookHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oa3-F9-CsR">
+                    <rect key="frame" x="15" y="0.0" width="15" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="dhs-Gx-uxl"/>
+                    </constraints>
+                    <state key="normal" image="AddressBook_close"/>
+                    <state key="selected" image="AddressBook_open"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机通讯录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSZ-Xp-hOR">
+                    <rect key="frame" x="35" y="0.0" width="330" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.2196078431372549" green="0.098039215686274508" blue="0.44705882352941173" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWg-If-cRP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                    <connections>
+                        <action selector="action:" destination="gZP-Tc-lqA" eventType="touchUpInside" id="net-iN-Oho"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJY-vC-v6V">
+                    <rect key="frame" x="0.0" y="44.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.84705882352941175" green="0.85098039215686272" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="EWd-G7-hZd"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haw-aR-jv1">
+                    <rect key="frame" x="315" y="11.5" width="45" height="23"/>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.30980392159999998" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="HQe-s0-NMZ"/>
+                        <constraint firstAttribute="width" constant="45" id="sct-C0-frx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="邀请">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="invationClick:" destination="gZP-Tc-lqA" eventType="touchUpInside" id="Ra6-Fa-AhQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VWg-If-cRP" firstAttribute="top" secondItem="gZP-Tc-lqA" secondAttribute="top" id="ANK-1H-GST"/>
+                <constraint firstItem="haw-aR-jv1" firstAttribute="centerY" secondItem="gZP-Tc-lqA" secondAttribute="centerY" id="E13-RY-hZS"/>
+                <constraint firstItem="VWg-If-cRP" firstAttribute="centerY" secondItem="gZP-Tc-lqA" secondAttribute="centerY" id="KeQ-0M-LW5"/>
+                <constraint firstItem="Oa3-F9-CsR" firstAttribute="leading" secondItem="gZP-Tc-lqA" secondAttribute="leading" constant="15" id="Luu-RP-s8t"/>
+                <constraint firstItem="HSZ-Xp-hOR" firstAttribute="leading" secondItem="Oa3-F9-CsR" secondAttribute="trailing" constant="5" id="OHo-cG-CXs"/>
+                <constraint firstItem="VWg-If-cRP" firstAttribute="centerX" secondItem="gZP-Tc-lqA" secondAttribute="centerX" id="VEE-2o-CaU"/>
+                <constraint firstAttribute="trailing" secondItem="haw-aR-jv1" secondAttribute="trailing" constant="15" id="dvJ-AR-Z31"/>
+                <constraint firstItem="mJY-vC-v6V" firstAttribute="leading" secondItem="gZP-Tc-lqA" secondAttribute="leading" id="ePc-uz-aIs"/>
+                <constraint firstItem="HSZ-Xp-hOR" firstAttribute="centerY" secondItem="gZP-Tc-lqA" secondAttribute="centerY" id="egB-hK-q3b"/>
+                <constraint firstItem="HSZ-Xp-hOR" firstAttribute="top" secondItem="gZP-Tc-lqA" secondAttribute="top" id="iRp-H6-Rx9"/>
+                <constraint firstItem="Oa3-F9-CsR" firstAttribute="top" secondItem="gZP-Tc-lqA" secondAttribute="top" id="m41-B9-EmP"/>
+                <constraint firstAttribute="trailing" secondItem="HSZ-Xp-hOR" secondAttribute="trailing" constant="10" id="oTp-tZ-YBA"/>
+                <constraint firstItem="mJY-vC-v6V" firstAttribute="centerX" secondItem="gZP-Tc-lqA" secondAttribute="centerX" id="tgV-4g-GPY"/>
+                <constraint firstItem="Oa3-F9-CsR" firstAttribute="centerY" secondItem="gZP-Tc-lqA" secondAttribute="centerY" id="v6C-0O-uxi"/>
+                <constraint firstAttribute="bottom" secondItem="mJY-vC-v6V" secondAttribute="bottom" id="wYn-R9-Dir"/>
+                <constraint firstItem="VWg-If-cRP" firstAttribute="leading" secondItem="gZP-Tc-lqA" secondAttribute="leading" id="xP5-Ds-cEm"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrowBtn" destination="Oa3-F9-CsR" id="KcC-kn-bfJ"/>
+                <outlet property="bottomLine" destination="mJY-vC-v6V" id="h89-m3-bMX"/>
+                <outlet property="inviteBtn" destination="haw-aR-jv1" id="Tt6-BM-mqr"/>
+                <outlet property="titleLab" destination="HSZ-Xp-hOR" id="hH8-vN-Vpm"/>
+            </connections>
+            <point key="canvasLocation" x="-239.5" y="-417.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AddressBook_close" width="8" height="13"/>
+        <image name="AddressBook_open" width="13" height="7"/>
+    </resources>
+</document>

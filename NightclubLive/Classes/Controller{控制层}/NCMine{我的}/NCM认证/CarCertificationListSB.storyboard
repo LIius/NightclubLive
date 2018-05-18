@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--车辆认证-->
+        <scene sceneID="Goh-GB-E4U">
+            <objects>
+                <tableViewController storyboardIdentifier="CarCertificationListTablViewController" title="车辆认证" id="JeH-f7-E14" customClass="CarCertificationListTablViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="ud2-gb-hQg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CarCertificationCell" rowHeight="145" id="z0M-pH-lFu" customClass="CarCertificationCell">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="145"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z0M-pH-lFu" id="r97-6c-evd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="认证通过" translatesAutoresizingMaskIntoConstraints="NO" id="cKK-RE-8X6">
+                                            <rect key="frame" x="0.0" y="0.0" width="71" height="51"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="71" id="dz0-s6-Iio"/>
+                                                <constraint firstAttribute="height" constant="51" id="ifT-04-EDD"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U3B-Nj-f6O">
+                                            <rect key="frame" x="25" y="47.5" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="mcQ-G7-czP"/>
+                                                <constraint firstAttribute="height" constant="50" id="s0u-zL-Pjf"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxa-qS-u0T">
+                                            <rect key="frame" x="83" y="62" width="292" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本车辆已通过夜店网平台认证" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10c-d2-Xgd">
+                                            <rect key="frame" x="12" y="115.5" width="199" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="G4I-o6-Myc"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.25882352939999997" green="0.72549019609999998" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Wxa-qS-u0T" firstAttribute="leading" secondItem="U3B-Nj-f6O" secondAttribute="trailing" constant="8" id="FfX-8P-j0A"/>
+                                        <constraint firstItem="10c-d2-Xgd" firstAttribute="leading" secondItem="r97-6c-evd" secondAttribute="leading" constant="12" id="LKN-1y-crF"/>
+                                        <constraint firstItem="cKK-RE-8X6" firstAttribute="top" secondItem="r97-6c-evd" secondAttribute="top" id="OBz-iu-Fk3"/>
+                                        <constraint firstAttribute="trailing" secondItem="Wxa-qS-u0T" secondAttribute="trailing" id="PlP-mX-AcE"/>
+                                        <constraint firstItem="U3B-Nj-f6O" firstAttribute="centerY" secondItem="r97-6c-evd" secondAttribute="centerY" id="RJ6-Th-eDH"/>
+                                        <constraint firstItem="Wxa-qS-u0T" firstAttribute="centerY" secondItem="r97-6c-evd" secondAttribute="centerY" id="XlI-6r-5eT"/>
+                                        <constraint firstItem="cKK-RE-8X6" firstAttribute="leading" secondItem="r97-6c-evd" secondAttribute="leading" id="fVL-RX-gcc"/>
+                                        <constraint firstItem="U3B-Nj-f6O" firstAttribute="leading" secondItem="r97-6c-evd" secondAttribute="leading" constant="25" id="tcf-dW-sAD"/>
+                                        <constraint firstAttribute="bottom" secondItem="10c-d2-Xgd" secondAttribute="bottom" constant="8" id="v5M-GB-cxG"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="carIV" destination="U3B-Nj-f6O" id="Fv2-TA-v6P"/>
+                                    <outlet property="carNameLabel" destination="Wxa-qS-u0T" id="oF7-yc-4gB"/>
+                                    <outlet property="passLabel" destination="10c-d2-Xgd" id="a1x-6a-ZSi"/>
+                                    <outlet property="statusIV" destination="cKK-RE-8X6" id="giK-ha-WCP"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JeH-f7-E14" id="Kcd-JC-7Zo"/>
+                            <outlet property="delegate" destination="JeH-f7-E14" id="E01-bv-Zhn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="车辆认证" id="GSX-ew-wy0">
+                        <barButtonItem key="rightBarButtonItem" title="添加" id="I2v-rU-1tI">
+                            <connections>
+                                <action selector="addClick:" destination="JeH-f7-E14" id="Kwc-rX-D4H"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addBtn" destination="I2v-rU-1tI" id="NXR-Dd-cbd"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OM7-CJ-JhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="1039"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="认证通过" width="16" height="16"/>
+    </resources>
+</document>
